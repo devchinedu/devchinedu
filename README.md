@@ -1,6 +1,6 @@
 ### Hi there, I'm David 👋
 
-[![Website]()](https://danatex.co.uk)
+[![Website](https://raw.githubusercontent.com/devchinedu/devchinedu/master/assets/img/Danatex%20LOGO%20(1)(1).png)](https://danatex.co.uk)
 
 ## I'm a Web Developer
 
