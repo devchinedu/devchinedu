@@ -1,0 +1,44 @@
+@import "./variables";
+@import "./header";
+@import "./experiences";
+@import "./svgstyle";
+@import "./buttons";
+
+@mixin displayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  @include displayFlex();
+  margin-top: 7em;
+  height: 35em;
+  width: 100%;
+  background-color: white;
+  p {
+    font-size: xx-large;
+    text-align: center;
+    line-height: 2;
+    color: #333;
+  }
+}
