@@ -1,0 +1,42 @@
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.experience{
+    @include displayFlex();
+    flex-direction: column;
+    .lightBg{
+        width: 100%;
+        background-color: floralwhite;
+    }
+    .darkBg{
+        width: 100%;
+        background-color: gainsboro;
+    }
+  
+}
+
+.project1{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    p{
+        line-height: 3;
+    }
+    .heading{
+        font-size: xx-large;
+    }
+    .subheading{
+        font-size: x-large;
+    }
+    .image img{
+        width: 70em;
+    }
+    
+}
+
+

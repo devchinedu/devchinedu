@@ -1,0 +1,18 @@
+button{
+    background: none;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: .2em;
+    font-size: larger;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+button:hover{
+    opacity: 5;
+    right: 0;
+    padding-right: 25px;
+    background: radial-gradient(circle at 50% 50%, #fffff7, #fbfaef, #f6f5e6, #f2f1de, #eeecd5, #eae7cd, #e7e2c4, #e3ddbc);
+}
+
