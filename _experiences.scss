@@ -1,0 +1,45 @@
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.experience{
+    @include displayFlex();
+    flex-direction: column;
+    .lightBg{
+        width: 100%;
+        background-color: var(--SEdarkBg);
+    }
+    .darkBg{
+        width: 100%;
+        background-color: var(--PrlighterBg);
+    }
+  
+}
+
+.project1{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    p{
+        line-height: 3;
+        color: var(--secondary-color);
+    }
+    .heading{
+        font-size: xx-large;
+        color: var(--secondary-color);
+    }
+    .subheading{
+        font-size: x-large;
+        color: var(--secondary-color);
+    }
+    .image img{
+        width: 70em;
+    }
+    
+}
+
+
