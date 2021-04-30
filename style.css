@@ -32,6 +32,7 @@ header {
 #dark {
   margin-right: 2em;
   width: 30px;
+  height: 30px;
   cursor: pointer;
   -webkit-animation: shake-animation 4.72s ease 3;
           animation: shake-animation 4.72s ease 3;
