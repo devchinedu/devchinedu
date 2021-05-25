@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 @import './button';
+@import './textAnimation';
+@import './mouseAnimation';
+@import './portofolio';
+@import './contact';
 
-:root {
-    --Violet: hsl(239, 57%, 15%);
-    --Soft-Magenta: hsl(300, 69%, 71%);
-  }
+
 
   
 *{
@@ -19,20 +20,23 @@
 }
 
 body{
-   background-image: url(./images/AnimatedShape.svg);
-   background-repeat: no-repeat;
-   background-size: cover;
+   margin: auto;
 }
 
 .wrapper{
   display: flex;
   position: relative;
+  background-image: url(./images/AnimatedShape.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+  animation: t-animation 6s;
 
 }
 
 .main_content{
     display: flex;
     height: 100vh;
+    animation: t-animation 6s;
     .header{
         display: flex;
         flex-direction: column;
@@ -54,7 +58,7 @@ body{
 }
 
 .wrapper .sidebar h2{
-margin-top: 10em;
+margin-top: 1em;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -127,4 +131,11 @@ margin-top: 10em;
   .social_media{
     display: none !important;
   }
+}
+
+@keyframes t-animation {
+	0% {opacity: 0;}
+	30% {opacity: 1;}
+	70% {opacity: 1;}
+	100% {opacity: 1;}
 }
