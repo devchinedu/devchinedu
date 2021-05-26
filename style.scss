@@ -3,7 +3,9 @@
 @import './textAnimation';
 @import './mouseAnimation';
 @import './portofolio';
-@import './contact';
+@import './footer';
+@import './skills';
+@import './funweb';
 
 
 
@@ -125,6 +127,35 @@ margin-top: 1em;
 
 .wrapper .main_content .info div{
   margin-bottom: 20px;
+}
+
+.blog{
+    display: none;
+    margin: 0 auto;
+    position: sticky;
+    height: 20em;
+    width: 20em;
+    background-color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.contact{
+
+    display: none;
+    margin: 0 auto;
+    position: sticky;
+    height: 20em;
+    width: 20em;
+    background-color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hidden{
+    display: flex;
 }
 
 @media (max-height: 500px){

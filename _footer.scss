@@ -1,0 +1,16 @@
+footer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #0b223a;
+    .footer--content a{
+        display: inline-flex;
+       font-size: 2em;
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
