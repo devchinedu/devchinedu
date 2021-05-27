@@ -18,17 +18,17 @@ html{
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+  box-sizing: content-box;
   font-family: 'Josefin Sans', sans-serif;
   
 
 }
 
 body{
-   max-width: 100vw;
-   max-height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+ overflow-x: hidden;
+
 
 }
 
@@ -39,12 +39,14 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
   animation: t-animation 6s;
-  min-height: 100vh;
+  max-height: 100vh;
+ 
 
 }
 
 .logo svg{
-  width: 10em;
+  max-width: 7em;
+  
 }
 
 svg path{
@@ -82,13 +84,15 @@ svg:hover{
 .main_content{
     display: flex;
     height: 100vh;
+ padding: 5em;
     animation: t-animation 6s;
+   
     
     .header{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 5em;
+       
        
     }
     h1, p{
@@ -101,22 +105,30 @@ svg:hover{
 
 
 .wrapper .sidebar{
+
   width: 150px;
-  height: 100%;
+  min-height: 100vh;
   background: #0b223a;
-  padding: 5px 0px;
+  padding: 50px 0px;
   position: fixed;
+  z-index: 999;
 }
 
 .wrapper .sidebar h2{
-margin-top: 1em;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
+  
+
 }
 
 .wrapper .sidebar ul li{
+  display: flex;
   padding: 15px;
   border-bottom: 1px solid #b8b9d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -146,6 +158,7 @@ margin-top: 1em;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  
 }
 
 .wrapper .sidebar .social_media a{
