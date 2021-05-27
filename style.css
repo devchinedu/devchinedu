@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 /*--Button Styles--*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 .btn-slice {
   padding: 1.2rem 2.5rem;
   border: 2px solid #ffffff;
@@ -347,7 +346,7 @@
   margin-top: 125px;
   bottom: 0;
   right: 0;
-  margin-right: 1em;
+  padding-right: 2em;
 }
 
 .m_scroll_arrows {
@@ -484,12 +483,7 @@
   }
 }
 
-.portofolio {
-  position: absolute;
-}
-
 .container {
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,9 +492,9 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 100vh;
   background-image: url(./images/Polygon-0.2s-2048px.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container .header--portofolio {
@@ -517,7 +511,6 @@ a {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -525,8 +518,11 @@ h1 {
   margin: auto 0;
 }
 
+.portofolio {
+  position: absolute;
+}
+
 .card {
-  float: left;
   padding: 1rem;
   min-width: 500px;
 }
@@ -1676,7 +1672,7 @@ svg:hover {
 
 .wrapper .sidebar {
   width: 150px;
-  min-height: 100vh;
+  height: 90%;
   background: #0b223a;
   padding: 50px 0px;
   position: fixed;

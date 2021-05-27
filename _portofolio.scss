@@ -1,13 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
 
 // Variables
 $dark-blue: #1E1B2D;
 $light-blue: #828092;
 $white: #fff;
 $black: #000;
-$open-sans: 'Open Sans',
-sans-serif;
+
 
 // clear-fix mixin
 @mixin cf {
@@ -22,21 +19,16 @@ sans-serif;
 }
 
 
-.portofolio{
-    position: absolute;
-  
 
-}
 .container {
-  margin: auto;
-  
- 
   display: flex;
+  
   justify-content: center;
   align-content: center;
-  height: 100vh;
+  
   background-image: url(./images/Polygon-0.2s-2048px.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   .header--portofolio{
    
       text-align: center;
@@ -54,19 +46,25 @@ a {
 }
 
 h1 {
-  font-family: $open-sans;
+  
   font-weight: 300;
 }
 
 .row {
   margin: auto 0;
+  
  
 }
 
+
+.portofolio{
+  position: absolute;
+
+
+}
 // Base styles
 .card {
  
-  float: left;
   padding: 1rem;
   min-width: 500px;
   .menu-content {
