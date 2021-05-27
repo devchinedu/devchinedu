@@ -3,18 +3,20 @@
 .section {
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
     padding-left: 75px;
     background-image: url(./images/RectLight.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+   
+  
   }
   .skill-desc{
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-left: 12em;
+      transform: translateX(15%);
       
       h2{
         line-height: 4;
@@ -63,6 +65,7 @@
   .wall {
     display: flex;
     margin-top: 10%;
+
  
     
   }
@@ -210,3 +213,34 @@
     border-right: 5px solid transparent;
     border-bottom: 5px solid black;
   }
+
+
+@media only screen and (max-width:1023px) {
+	.wall {
+    margin: 1em auto;
+   
+	}
+ 
+
+}
+
+@media only screen and (max-width:779px) {
+	.wall {
+    margin: 1em auto;
+    
+
+    
+	}
+
+  
+}
+
+@media only screen and (max-width:539px) {
+	.wall{
+    margin: 1em auto;
+   
+	}
+
+  
+ 
+}

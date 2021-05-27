@@ -497,6 +497,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 .container .portfoliotitle {
@@ -535,8 +536,6 @@ p.label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -558,17 +557,32 @@ p.label {
   .projectList li {
     width: 100%;
   }
+  .projectList {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10em;
+  }
 }
 
 @media only screen and (max-width: 779px) {
   .projectList li {
     width: 100%;
   }
+  .projectList {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10em;
+  }
 }
 
 @media only screen and (max-width: 539px) {
   .projectList li {
     width: 100%;
+  }
+  .projectList {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 7em;
   }
 }
 
@@ -593,7 +607,7 @@ p.label {
   width: 100%;
   height: 100%;
   float: left;
-  background: #fff;
+  background: white;
   border-radius: 5px;
   -webkit-box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
           box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
@@ -773,11 +787,13 @@ footer p a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 75px;
   background-image: url(./images/RectLight.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .skill-desc {
@@ -791,7 +807,8 @@ footer p a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 12em;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
 }
 
 .skill-desc h2 {
@@ -1006,6 +1023,24 @@ footer p a:hover {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid black;
+}
+
+@media only screen and (max-width: 1023px) {
+  .wall {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+  .wall {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .wall {
+    margin: 1em auto;
+  }
 }
 
 .container1 {
