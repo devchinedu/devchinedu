@@ -1,343 +1,559 @@
 
-// Variables
-$dark-blue: #1E1B2D;
-$light-blue: #828092;
-$white: #fff;
-$black: #000;
+// // Variables
+// $dark-blue: #1E1B2D;
+// $light-blue: #828092;
+// $white: #fff;
+// $black: #000;
 
 
-// clear-fix mixin
-@mixin cf {
-  &::before,
-  &::after {
-    content: '';
-    display: table;
-  }
-  &::after {
-    clear: both;
-  }
-}
+// // clear-fix mixin
+// @mixin cf {
+//   &::before,
+//   &::after {
+//     content: '';
+//     display: table;
+//   }
+//   &::after {
+//     clear: both;
+//   }
+// }
+
+
+
+// .container {
+//   display: flex;
+  
+//   justify-content: center;
+//   align-content: center;
+  
+//   background-image: url(./images/Polygon-0.2s-2048px.svg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   .header--portofolio{
+   
+//       text-align: center;
+//       margin-top: 5em;
+//       p{
+//           margin-bottom: 2em;
+//       }
+      
+//   }
+
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// h1 {
+  
+//   font-weight: 300;
+// }
+
+// .row {
+//   margin: auto 0;
+  
+ 
+// }
+
+
+// .portofolio{
+//   position: absolute;
+
+
+// }
+// // Base styles
+// .card {
+ 
+//   padding: 1rem;
+//   min-width: 500px;
+//   .menu-content {
+//     @include cf;
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+//     li {
+//       display: inline-block;
+//     }
+//     a {
+//       color: $white;
+//     }
+//   }
+//   .wrapper {
+//     background-color: $white;
+//     min-height: 540px;
+//     position: relative;
+//     overflow: hidden;
+//     box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+//     &:hover {
+//       .data {
+//         transform: translateY(0);
+//       }
+//     }
+//   }
+//   .data {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     transform: translateY(calc(80px + 1em));
+//     transition: transform 0.3s;
+//     .content {
+//       padding: 1.5em;
+//       position: relative;
+//       z-index: 1;
+//     }
+//   }
+//   .type {
+//     font-size: 12px;
+//   }
+//   .title {
+//     margin-top: 10px;
+//   }
+//   .text {
+//     height: 70px;
+//     margin: 0;
+//     color: white;
+//   }
+//   input[type='checkbox'] {
+//     display: none;
+//   }
+//   input[type='checkbox']:checked + .menu-content {
+//     transform: translateY(-60px);
+//   }
+// }
+
+// // Example
+
+
+// .example-1 {
+//   .wrapper {
+//     background: url(./images/DanatravelsPotriat.jpg) 30% 1% / cover no-repeat;
+//   }
+//   .date {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background-color: rgb(28, 83, 142);
+//     color: $white;
+//     padding: .75rem;
+//     span {
+//       display: block;
+//       text-align: center;
+//     }
+//     .day {
+//       font-weight: 700;
+//       font-size: 1rem;
+//       text-shadow: 2px 3px 2px rgba($black, 0.18);
+//     }
+//   }
+//   .content {
+//     background-color: rgb(28, 83, 142);
+//     color: white;
+//     box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+//   }
+//   .title {
+//     a {
+//       color: white;
+//     }
+//   }
+//     .menu-content {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 0%;
+//     li {
+//       text-align: center;
+//       width: 3rem;
+//       background-color: rgb(28, 83, 142);
+//       height: 3rem;
+//       position: relative;
+//     }
+//     a {
+//       font-size: 24px;
+//     }
+//   }
+// }
+
+// .fa-github:hover{
+//   color: aquamarine;
+// }
+
+
+// .example-2 {
+//   .wrapper {
+//     background: url(./images/portofolioPotriat.jpg) 30% 1% / cover no-repeat;
+//   }
+//   .date {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background-color: rgb(28, 83, 142);
+//     color: $white;
+//     padding: .75rem;
+//     span {
+//       display: block;
+//       text-align: center;
+//     }
+//     .day {
+//       font-weight: 700;
+//       font-size: 1rem;
+//       text-shadow: 2px 3px 2px rgba($black, 0.18);
+//     }
+//   }
+//   .content {
+//     background-color: rgb(28, 83, 142);
+//     color: white;
+//     box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+//   }
+//   .title {
+//     a {
+//       color: white;
+//     }
+//   }
+//     .menu-content {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 0%;
+//     li {
+//       text-align: center;
+//       width: 3rem;
+//       background-color: rgb(28, 83, 142);
+//       height: 3rem;
+//       position: relative;
+//     }
+//     a {
+//       font-size: 24px;
+//     }
+//   }
+// }
+
+// .example-3 {
+//   .wrapper {
+//     background: url(./images/danatexPotriat.jpg) 30% 1% / cover no-repeat;
+//   }
+//   .date {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background-color: rgb(28, 83, 142);
+//     color: $white;
+//     padding: .75rem;
+//     span {
+//       display: block;
+//       text-align: center;
+//     }
+//     .day {
+//       font-weight: 700;
+//       font-size: 1rem;
+//       text-shadow: 2px 3px 2px rgba($black, 0.18);
+//     }
+//   }
+//   .content {
+//     background-color: rgb(28, 83, 142);
+//     color: white;
+//     box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+//   }
+//   .title {
+//     a {
+//       color: white;
+//     }
+//   }
+//     .menu-content {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 0%;
+//     li {
+//       text-align: center;
+//       width: 3rem;
+//       background-color: rgb(28, 83, 142);
+//       height: 3rem;
+//       position: relative;
+//     }
+//     a {
+//       font-size: 24px;
+//     }
+//   }
+// }
+
+
+// // alternate card style
+
+// // Base styles
+// .alternate-card {
+//   float: left;
+//   padding: 1rem;
+//   min-width: 500px;
+//   .menu-content {
+//     @include cf;
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+//     li {
+//       display: inline-block;
+//     }
+//     a {
+//       color: $white;
+//     }
+//   }
+//   .wrapper {
+//     background-color: $white;
+//     min-height: 540px;
+//     position: relative;
+//     overflow: hidden;
+//     box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+//     &:hover {
+//       .data {
+//         transform: translateY(0);
+//       }
+//     }
+//   }
+//   .data {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     transform: translateY(calc(100% + 1em));
+//     transition: transform 0.3s;
+//     .content {
+//       padding: 1.5em;
+//       position: relative;
+//       z-index: 1;
+//     }
+//   }
+//   .type {
+//     font-size: 12px;
+//   }
+//   .title {
+//     margin-top: 10px;
+//   }
+//   .text {
+//     height: 325px;
+//     margin: 0;
+//     color: white;
+//   }
+//   input[type='checkbox'] {
+//     display: none;
+//   }
+//   input[type='checkbox']:checked + .menu-content {
+//     transform: translateY(-60px);
+//   }
+// }
 
 
 
 .container {
   display: flex;
   
-  justify-content: center;
   align-content: center;
-  
+  flex-direction: column;
   background-image: url(./images/Polygon-0.2s-2048px.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  .header--portofolio{
+  min-height: 100vh;
+ 
+  .portfoliotitle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 2.5;
+    padding: 2em;
+    margin-top: 2.3em;
+  }
+  h1{
+    font-size: 2em;
+    
+  }
+
+}
+
+
+
+.meta h5{
+  
+	margin-left: 1em;
+}
+p.label {
+	width:100%;
+	text-align:center;
+	color:#80919b;
+	font-size:15px;
+	line-height:20px;
+
+	
+}
+
+
+
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	max-width:100%;
+	list-style:none;
+	padding-left:20em;
+	padding-right:15em;
+  
+  
    
-      text-align: center;
-      margin-top: 5em;
-      p{
-          margin-bottom: 2em;
-      }
-      
-  }
-
 }
 
-a {
-  text-decoration: none;
-}
-
-h1 {
+.project{
+  margin: 3em;
   
-  font-weight: 300;
+  
+  
+  
 }
 
-.row {
-  margin: auto 0;
+
+.projectList li {
+	min-width:40%;
+ 
+	
+}
+
+@media only screen and (max-width:1023px) {
+	.projectList li {
+		width:100%;
+   
+	}
+
+}
+
+@media only screen and (max-width:779px) {
+	.projectList li {
+		width:100%;
+    
+
+    
+	}
   
+}
+
+@media only screen and (max-width:539px) {
+	.projectList li {
+		width:100%;
+   
+	}
  
 }
 
-
-.portofolio{
-  position: absolute;
-
-
-}
-// Base styles
-.card {
- 
-  padding: 1rem;
-  min-width: 500px;
-  .menu-content {
-    @include cf;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    li {
-      display: inline-block;
-    }
-    a {
-      color: $white;
-    }
-  }
-  .wrapper {
-    background-color: $white;
-    min-height: 540px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
-    &:hover {
-      .data {
-        transform: translateY(0);
-      }
-    }
-  }
-  .data {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    transform: translateY(calc(80px + 1em));
-    transition: transform 0.3s;
-    .content {
-      padding: 1.5em;
-      position: relative;
-      z-index: 1;
-    }
-  }
-  .type {
-    font-size: 12px;
-  }
-  .title {
-    margin-top: 10px;
-  }
-  .text {
-    height: 70px;
-    margin: 0;
-    color: white;
-  }
-  input[type='checkbox'] {
-    display: none;
-  }
-  input[type='checkbox']:checked + .menu-content {
-    transform: translateY(-60px);
-  }
+.projectList li .projectWrap {
+	width:100%;
+	float:left;
+	padding:100% 0 0 0;
+	position:relative;
 }
 
-// Example
-
-
-.example-1 {
-  .wrapper {
-    background: url(./images/DanatravelsPotriat.jpg) 30% 1% / cover no-repeat;
-  }
-  .date {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgb(28, 83, 142);
-    color: $white;
-    padding: .75rem;
-    span {
-      display: block;
-      text-align: center;
-    }
-    .day {
-      font-weight: 700;
-      font-size: 1rem;
-      text-shadow: 2px 3px 2px rgba($black, 0.18);
-    }
-  }
-  .content {
-    background-color: rgb(28, 83, 142);
-    color: white;
-    box-shadow: 0 5px 30px 10px rgba($black, 0.3);
-  }
-  .title {
-    a {
-      color: white;
-    }
-  }
-    .menu-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    li {
-      text-align: center;
-      width: 3rem;
-      background-color: rgb(28, 83, 142);
-      height: 3rem;
-      position: relative;
-    }
-    a {
-      font-size: 24px;
-    }
-  }
+.projectList li .projectWrap .inner {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:10px;
+	overflow:hidden;
 }
 
-.fa-github:hover{
-  color: aquamarine;
+.projectList li .projectWrap .inner .project {
+	width:100%;
+	height:100%;
+	float:left;
+	background:#fff;
+	border-radius:5px;
+	box-shadow:0px 2px 4px 1px rgba(56,72,84,0.1);
+	padding:10px;
+	position:relative;
+	overflow:hidden;
+	cursor:pointer;
+	
+	transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.example-2 {
-  .wrapper {
-    background: url(./images/portofolioPotriat.jpg) 30% 1% / cover no-repeat;
-  }
-  .date {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgb(28, 83, 142);
-    color: $white;
-    padding: .75rem;
-    span {
-      display: block;
-      text-align: center;
-    }
-    .day {
-      font-weight: 700;
-      font-size: 1rem;
-      text-shadow: 2px 3px 2px rgba($black, 0.18);
-    }
-  }
-  .content {
-    background-color: rgb(28, 83, 142);
-    color: white;
-    box-shadow: 0 5px 30px 10px rgba($black, 0.3);
-  }
-  .title {
-    a {
-      color: white;
-    }
-  }
-    .menu-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    li {
-      text-align: center;
-      width: 3rem;
-      background-color: rgb(28, 83, 142);
-      height: 3rem;
-      position: relative;
-    }
-    a {
-      font-size: 24px;
-    }
-  }
+.projectList li .projectWrap .inner .project .innerWrap {
+	width:100%;
+	height:100%;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	border-radius:1px;
+	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
-.example-3 {
-  .wrapper {
-    background: url(./images/danatexPotriat.jpg) 30% 1% / cover no-repeat;
-  }
-  .date {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgb(28, 83, 142);
-    color: $white;
-    padding: .75rem;
-    span {
-      display: block;
-      text-align: center;
-    }
-    .day {
-      font-weight: 700;
-      font-size: 1rem;
-      text-shadow: 2px 3px 2px rgba($black, 0.18);
-    }
-  }
-  .content {
-    background-color: rgb(28, 83, 142);
-    color: white;
-    box-shadow: 0 5px 30px 10px rgba($black, 0.3);
-  }
-  .title {
-    a {
-      color: white;
-    }
-  }
-    .menu-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    li {
-      text-align: center;
-      width: 3rem;
-      background-color: rgb(28, 83, 142);
-      height: 3rem;
-      position: relative;
-    }
-    a {
-      font-size: 24px;
-    }
-  }
+.projectList li .projectWrap .inner .project .innerWrap .image {
+	width:100%;
+	height:100%;
+	float:left;
+	position:relative;
+	border-radius:1px;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	
+	
+	transition:transform 0.3s ease;
 }
 
-
-// alternate card style
-
-// Base styles
-.alternate-card {
-  float: left;
-  padding: 1rem;
-  min-width: 500px;
-  .menu-content {
-    @include cf;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    li {
-      display: inline-block;
-    }
-    a {
-      color: $white;
-    }
-  }
-  .wrapper {
-    background-color: $white;
-    min-height: 540px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
-    &:hover {
-      .data {
-        transform: translateY(0);
-      }
-    }
-  }
-  .data {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    transform: translateY(calc(100% + 1em));
-    transition: transform 0.3s;
-    .content {
-      padding: 1.5em;
-      position: relative;
-      z-index: 1;
-    }
-  }
-  .type {
-    font-size: 12px;
-  }
-  .title {
-    margin-top: 10px;
-  }
-  .text {
-    height: 325px;
-    margin: 0;
-    color: white;
-  }
-  input[type='checkbox'] {
-    display: none;
-  }
-  input[type='checkbox']:checked + .menu-content {
-    transform: translateY(-60px);
-  }
+.projectList li .projectWrap .inner .project .innerWrap .image:before {
+	content:'';
+	width:100%;
+	height:100%;
+	position:absolute;
+	border-radius:1px;
+	top:0;
+	left:0;
+	z-index:1;
+	background:rgba(56,72,84,0.5);
+	opacity:0;
+	
+	transition:opacity 0.3s ease;
 }
 
+.projectList li .projectWrap .inner .project .innerWrap .metaWrap {
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:2;
+	padding:0 10px 10px;
+	transform:translate3d(0px,20px,0px);
+	opacity:0;
+	
+	transition:transform 0.3s ease, opacity 0.3s ease;
+}
 
+.projectList li .projectWrap .inner .project .innerWrap .meta {
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,1.0);
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.projectList li .projectWrap .inner .project:hover {
+	transform:translate3d(0px,-5px,0px);
+	box-shadow:0px 5px 8px 3px rgba(56,72,84,0.2);
+}
+
+.projectList li .projectWrap .inner .project:hover .image {
+	transform:scale(1);
+}
+
+.projectList li .projectWrap .inner .project:hover .image:before {
+	opacity:1;
+}
+
+.projectList li .projectWrap .inner .project:hover .metaWrap {
+	transform:translate3d(0px,0px,0px);
+	opacity:1;
+}
+
+.projectList li .projectWrap .inner .project:hover .meta h5 {
+	transform:scale(1);
+}
