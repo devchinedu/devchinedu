@@ -13,7 +13,8 @@ contactus.addEventListener('click', function(){
 });
 
 
-sendbtn.addEventListener('click', function(){
+sendbtn.addEventListener('click', function(event){
+     event.preventDefault();
     sent.style.display = 'flex';
     contactpage.classList.remove('hidden');
     
