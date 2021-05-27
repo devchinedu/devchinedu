@@ -6,8 +6,6 @@ const sent = document.querySelector('#thankyou');
 const closebtn = document.getElementsByClassName('close');
 
 
-// event.preventDefault();
-
 contactus.addEventListener('click', function(){
     contactpage.classList.add('hidden');
 });
