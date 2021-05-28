@@ -54,6 +54,7 @@
       }
   }
 .desc{
+  
   transition: all .2s ease-in-out;
 }
   .desc:hover{
@@ -214,33 +215,3 @@
     border-bottom: 5px solid black;
   }
 
-
-@media only screen and (max-width:1023px) {
-	.wall {
-    margin: 1em auto;
-   
-	}
- 
-
-}
-
-@media only screen and (max-width:779px) {
-	.wall {
-    margin: 1em auto;
-    
-
-    
-	}
-
-  
-}
-
-@media only screen and (max-width:539px) {
-	.wall{
-    margin: 1em auto;
-   
-	}
-
-  
- 
-}

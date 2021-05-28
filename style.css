@@ -1025,24 +1025,6 @@ footer p a:hover {
   border-bottom: 5px solid black;
 }
 
-@media only screen and (max-width: 1023px) {
-  .wall {
-    margin: 1em auto;
-  }
-}
-
-@media only screen and (max-width: 779px) {
-  .wall {
-    margin: 1em auto;
-  }
-}
-
-@media only screen and (max-width: 539px) {
-  .wall {
-    margin: 1em auto;
-  }
-}
-
 .container1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,7 +1283,7 @@ body {
   background-size: cover;
   -webkit-animation: t-animation 6s;
           animation: t-animation 6s;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .logo svg {
@@ -1310,10 +1292,8 @@ body {
 
 svg path {
   fill: none;
-  stroke: #49a09d;
-  -webkit-filter: drop-shadow(3px 3px 2px white);
-          filter: drop-shadow(3px 3px 2px white);
-  stroke-width: 0.7;
+  stroke: #64FFDA;
+  stroke-width: 2;
   stroke-dasharray: 2566;
   stroke-dashoffset: 2566;
   -webkit-animation: cloud 5s linear forwards 3;
@@ -1384,7 +1364,7 @@ svg:hover {
 
 .wrapper .sidebar {
   width: 150px;
-  height: 90%;
+  min-height: 90vh;
   background: #0b223a;
   padding: 50px 0px;
   position: fixed;
@@ -1457,6 +1437,10 @@ svg:hover {
   border-top-right-radius: 5px;
 }
 
+.wrapper .sidebar .social_media a:hover {
+  color: #64FFDA;
+}
+
 .wrapper .main_content {
   width: 100%;
   margin-left: 200px;
@@ -1505,6 +1489,42 @@ svg:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .wall {
+    margin: 1em auto;
+  }
+  .desc {
+    max-width: 90%;
+  }
+  .sidebar {
+    min-height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+  .wall {
+    margin: 1em auto;
+  }
+  .desc {
+    max-width: 90%;
+  }
+  .sidebar {
+    min-height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .wall {
+    margin: 1em auto;
+  }
+  .desc {
+    max-width: 90%;
+  }
+  .sidebar {
+    min-height: 30vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

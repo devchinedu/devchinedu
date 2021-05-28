@@ -40,7 +40,7 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
   animation: t-animation 6s;
-  max-height: 100vh;
+  min-height: 100vh;
 
  
 
@@ -53,9 +53,9 @@ body{
 
 svg path{
   fill: none;
-  stroke: #49a09d; //#64FFDA
-  filter: drop-shadow( 3px 3px 2px rgb(255, 255, 255));
-  stroke-width: 0.7;
+  stroke: #64FFDA; //#64FFDA
+  // filter: drop-shadow( 3px 3px 2px rgb(255, 255, 255));
+  stroke-width: 2;
   stroke-dasharray: 2566;
   stroke-dashoffset: 2566;
   animation: cloud 5s linear forwards 3;
@@ -109,7 +109,7 @@ svg:hover{
 .wrapper .sidebar{
 
   width: 150px;
-  height: 90%;
+  min-height: 90vh;
   background: #0b223a;
   padding: 50px 0px;
   position: fixed;
@@ -161,6 +161,7 @@ svg:hover{
   transform: translateX(-50%);
   display: flex;
   
+  
 }
 
 .wrapper .sidebar .social_media a{
@@ -174,7 +175,14 @@ svg:hover{
   color: #bdb8d7;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  &:hover{
+    color: #64FFDA;
+  }
 }
+
+
+
+
 
 .wrapper .main_content{
   width: 100%;
@@ -210,4 +218,52 @@ svg:hover{
 	30% {opacity: 1;}
 	70% {opacity: 1;}
 	100% {opacity: 1;}
+}
+
+
+
+@media only screen and (max-width:1023px) {
+	.wall {
+    margin: 1em auto;
+   
+	}
+ 
+  .desc{
+    max-width: 90%;
+  }
+  .sidebar{
+    min-height: 80vh;
+  }
+}
+
+@media only screen and (max-width:779px) {
+	.wall {
+    margin: 1em auto;
+    
+
+    
+	}
+  .desc{
+    max-width: 90%;
+  }
+  .sidebar{
+    min-height: 60vh;
+  }
+  
+}
+
+@media only screen and (max-width:539px) {
+	.wall{
+    margin: 1em auto;
+   
+	}
+  .desc{
+    max-width: 90%;
+  }
+  .sidebar{
+    min-height: 30vh;
+  }
+  
+  
+ 
 }
