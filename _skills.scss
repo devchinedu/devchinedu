@@ -26,7 +26,7 @@
           position: relative;
           display: inline-block;
           overflow: hidden;
-          background: linear-gradient(to right, yellowgreen, yellowgreen 50%, white 50%);
+          background: linear-gradient(to right, #64FFDA, #64FFDA 50%, white 50%);
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -46,11 +46,11 @@
          
       }
       span{
-          color: yellowgreen;
+          color: #64FFDA;
           text-decoration: underline;
       }
       a{
-        color: yellowgreen;
+        color: #64FFDA;;
       }
   }
 .desc{
@@ -110,7 +110,7 @@
       &.link > .box-face {
         background-color: transparent!important;
         & > .box-text {
-          color: #a2d445;
+          color: #64FFDA;
         }
       }
     }

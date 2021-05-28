@@ -40,8 +40,9 @@ body{
   background-image: url(./images/AnimatedShape.svg);
    background-repeat: no-repeat;
    background-size: cover;
-  animation: t-animation 6s;
-  height: 100vh;
+    animation: t-animation 6s;
+    height: 100vh;
+ 
 
  
 
@@ -80,6 +81,7 @@ svg:hover{
 
 
 .brandname{
+  
   animation: leap 0.7s 1;
 
 &:hover{
@@ -89,7 +91,7 @@ svg:hover{
 .main_content{
     display: flex;
     height: 100vh;
- padding: 5em;
+    padding: 5em;
     animation: t-animation 6s;
    
     
@@ -101,10 +103,13 @@ svg:hover{
        
     }
     h1, p{
-        color: floralwhite;
+        color: rgb(240, 241, 255);
         font-size: 5em;
       
         animation: squash 0.9s 1;
+    }
+    p{
+      color: #CCD6F6;
     }
 }
 
@@ -116,9 +121,10 @@ flex-direction: column;
   width: 150px;
   height: 100vh;
   background: #0b223a;
-  padding: 50px 0px;
+  padding: 0px 0px;
   position: fixed;
   z-index: 999;
+
 }
 
 .wrapper .sidebar h2{
@@ -126,12 +132,16 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   align-content: center;
-  color: #fff;
+  color: #64FFDA;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1em;
   
 
+}
+
+.fas {
+  color: #64FFDA;
 }
 
 .wrapper .sidebar ul li{
@@ -156,15 +166,20 @@ flex-direction: column;
 }
     
 .wrapper .sidebar ul li:hover a{
-  color: #fff;
+  color: #64FFDA;
 }
  
 .wrapper .sidebar .social_media{
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  
+
+ 
+ 
+
   
   
   

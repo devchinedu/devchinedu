@@ -3,7 +3,7 @@
 /*--Button Styles--*/
 .btn-slice {
   padding: 1.2rem 2.5rem;
-  border: 2px solid #ffffff;
+  border: 2px solid #64FFDA;
   border-radius: 0rem;
   color: #ffffff;
   font-size: 0.9rem;
@@ -87,7 +87,7 @@
   content: '';
   height: 1px;
   width: 60px;
-  background-color: #ffffff;
+  background-color: #64FFDA;
   position: absolute;
   margin-top: 6px;
   right: -35px;
@@ -513,15 +513,27 @@
   text-align: center;
   line-height: 2.5;
   padding: 2em;
-  margin-top: 2.3em;
+  margin-top: 2.1em;
 }
 
 .container h1 {
   font-size: 2em;
+  color: #454647;
+}
+
+.container p {
+  color: #33816f;
+  font-size: 20px;
 }
 
 .meta h5 {
-  margin-left: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  color: whitesmoke;
+}
+
+.meta h5 a {
+  color: whitesmoke;
 }
 
 p.label {
@@ -606,12 +618,11 @@ p.label {
 .projectList li .projectWrap .inner .project {
   width: 100%;
   height: 100%;
-  float: left;
   background: white;
   border-radius: 5px;
   -webkit-box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
           box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
-  padding: 10px;
+  padding: 5px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -637,8 +648,8 @@ p.label {
   float: left;
   position: relative;
   border-radius: 1px;
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -663,12 +674,12 @@ p.label {
 
 .projectList li .projectWrap .inner .project .innerWrap .metaWrap {
   width: 100%;
-  height: 100px;
+  height: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 2;
-  padding: 0 10px 10px;
+  padding: 0 0px 10px;
   -webkit-transform: translate3d(0px, 20px, 0px);
           transform: translate3d(0px, 20px, 0px);
   opacity: 0;
@@ -681,7 +692,7 @@ p.label {
 .projectList li .projectWrap .inner .project .innerWrap .meta {
   width: 100%;
   height: 100%;
-  background: white;
+  background: rgba(11, 34, 58, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,7 +766,7 @@ footer a {
 }
 
 footer a:hover {
-  color: chartreuse;
+  color: #64FFDA;
 }
 
 footer p {
@@ -768,7 +779,7 @@ footer p a {
 }
 
 footer p a:hover {
-  color: chartreuse;
+  color: #64FFDA;
 }
 
 .footerlinks:hover {
@@ -819,8 +830,8 @@ footer p a:hover {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(yellowgreen), color-stop(50%, yellowgreen), color-stop(50%, white));
-  background: linear-gradient(to right, yellowgreen, yellowgreen 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, from(#64FFDA), color-stop(50%, #64FFDA), color-stop(50%, white));
+  background: linear-gradient(to right, #64FFDA, #64FFDA 50%, white 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -842,12 +853,12 @@ footer p a:hover {
 }
 
 .skill-desc span {
-  color: yellowgreen;
+  color: #64FFDA;
   text-decoration: underline;
 }
 
 .skill-desc a {
-  color: yellowgreen;
+  color: #64FFDA;
 }
 
 .desc {
@@ -922,7 +933,7 @@ footer p a:hover {
 }
 
 .box:hover.link > .box-face > .box-text {
-  color: #a2d445;
+  color: #64FFDA;
 }
 
 .box.link > .box-face {
@@ -1248,7 +1259,7 @@ footer p a:hover {
 }
 
 #thankyou p {
-  color: whitesmoke;
+  color: #64FFDA;
 }
 
 .hidden {
@@ -1475,10 +1486,14 @@ svg:hover {
 }
 
 .main_content h1, .main_content p {
-  color: floralwhite;
+  color: #f0f1ff;
   font-size: 5em;
   -webkit-animation: squash 0.9s 1;
           animation: squash 0.9s 1;
+}
+
+.main_content p {
+  color: #CCD6F6;
 }
 
 .wrapper .sidebar {
@@ -1495,7 +1510,7 @@ svg:hover {
   width: 150px;
   height: 100vh;
   background: #0b223a;
-  padding: 50px 0px;
+  padding: 0px 0px;
   position: fixed;
   z-index: 999;
 }
@@ -1509,10 +1524,14 @@ svg:hover {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  color: #fff;
+  color: #64FFDA;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1em;
+}
+
+.fas {
+  color: #64FFDA;
 }
 
 .wrapper .sidebar ul li {
@@ -1539,11 +1558,11 @@ svg:hover {
 }
 
 .wrapper .sidebar ul li:hover a {
-  color: #fff;
+  color: #64FFDA;
 }
 
 .wrapper .sidebar .social_media {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
