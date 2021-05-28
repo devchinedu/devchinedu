@@ -483,6 +483,11 @@
   }
 }
 
+.container1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,12 +895,12 @@ footer p a:hover {
   color: #64FFDA;
 }
 
-.desc {
+#desc {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
-.desc:hover {
+#desc:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -1695,7 +1700,7 @@ svg:hover {
     margin: 1em auto;
   }
   .desc {
-    min-width: 90%;
+    max-width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
