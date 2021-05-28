@@ -38,3 +38,13 @@ wobbleElements.forEach(function(el){
 		el.classList.remove('mouseover');
 	});
 });
+
+var scene = document.getElementById('js-scene');
+var parallax = new Parallax(scene);
+
+// #scene{
+//     position: absolute;
+//     right: -10%;
+//     bottom: 10%;
+//     width: 80%;
+// }

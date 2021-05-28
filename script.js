@@ -25,4 +25,6 @@ closebtn[i].addEventListener('click', function(){
         sent.style.display = 'none';
 
 })
-}
+};
+
+

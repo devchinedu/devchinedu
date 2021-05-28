@@ -7,6 +7,7 @@
 @import './skills';
 @import './funweb';
 @import './contact';
+@import './scrollFade.scss';
 
 
 
@@ -40,7 +41,7 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
   animation: t-animation 6s;
-  min-height: 100vh;
+  height: 100vh;
 
  
 
@@ -76,6 +77,8 @@ svg:hover{
 }
 
 
+
+
 .brandname{
   animation: leap 0.7s 1;
 
@@ -107,9 +110,11 @@ svg:hover{
 
 
 .wrapper .sidebar{
-
+display: flex;
+justify-content: center;
+flex-direction: column;
   width: 150px;
-  min-height: 90vh;
+  height: 100vh;
   background: #0b223a;
   padding: 50px 0px;
   position: fixed;
@@ -155,11 +160,12 @@ svg:hover{
 }
  
 .wrapper .sidebar .social_media{
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  
   
   
 }
@@ -231,9 +237,7 @@ svg:hover{
   .desc{
     max-width: 90%;
   }
-  .sidebar{
-    min-height: 80vh;
-  }
+
 }
 
 @media only screen and (max-width:779px) {
@@ -246,9 +250,7 @@ svg:hover{
   .desc{
     max-width: 90%;
   }
-  .sidebar{
-    min-height: 60vh;
-  }
+
   
 }
 
@@ -260,9 +262,7 @@ svg:hover{
   .desc{
     max-width: 90%;
   }
-  .sidebar{
-    min-height: 30vh;
-  }
+
  
   
  
