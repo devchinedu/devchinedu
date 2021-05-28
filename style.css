@@ -837,7 +837,7 @@ footer p a:hover {
 
 .skill-desc p {
   text-align: justify;
-  width: 50em;
+  width: 60em;
   color: white;
 }
 
@@ -1132,7 +1132,8 @@ footer p a:hover {
   font-weight: bolder;
   color: rgba(77, 77, 77, 0.1);
   position: absolute;
-  right: -01em;
+  right: -1em;
+  bottom: 0.2em;
 }
 
 .form-box h1 {
