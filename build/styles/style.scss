@@ -29,7 +29,7 @@ body {
 .wrapper {
   display: flex;
   position: relative;
-  background-image: url(./build/svg/AnimatedShape.svg);
+  background-image: url(../svg/AnimatedShape.svg);
   background-repeat: no-repeat;
   background-size: cover;
   animation: t-animation 6s;
