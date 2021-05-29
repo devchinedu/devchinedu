@@ -1062,8 +1062,8 @@ footer p a:hover {
 
 .contactPage {
   display: none;
-  max-width: 80%;
-  max-height: 80%;
+  width: 70vw;
+  height: 90vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1095,7 +1095,6 @@ footer p a:hover {
 }
 
 .aboutme h2 {
-  margin-top: 10%;
   font-size: 4em;
   color: #0b223a;
 }
@@ -1107,7 +1106,6 @@ footer p a:hover {
 
 .aboutme p {
   text-align: justify;
-  margin-top: 3em;
   line-height: 1.5;
   font-size: 18px;
 }
@@ -1157,15 +1155,15 @@ footer p a:hover {
 
 .form-box h1 {
   color: white;
-  margin-bottom: 2em;
   font-weight: 500;
 }
 
-.form-box input[type="text"], .form-box input[type="text"] {
+.form-box input[type="text"],
+.form-box input[type="text"] {
   border: 0;
   background: none;
   display: block;
-  margin: 20px auto;
+  margin: 7px auto;
   text-align: center;
   border: 2px solid #3498db;
   padding: 14px 1px;
@@ -1177,13 +1175,14 @@ footer p a:hover {
   transition: 0.25s;
 }
 
-.form-box input[type="text"]:focus, .form-box input[type="text"]:focus {
+.form-box input[type="text"]:focus,
+.form-box input[type="text"]:focus {
   width: 350px;
   border-color: #2ecc71;
 }
 
 .textarea {
-  height: 20em;
+  height: 15em;
 }
 
 .form-box input[type="submit"] {
@@ -1219,10 +1218,11 @@ footer p a:hover {
   opacity: 1;
 }
 
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 2px;
   background-color: white;
@@ -1267,7 +1267,7 @@ footer p a:hover {
 }
 
 #thankyou p {
-  color: #64FFDA;
+  color: #64ffda;
 }
 
 .hidden {
