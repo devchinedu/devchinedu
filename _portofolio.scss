@@ -1,13 +1,11 @@
-
-
-.container1{
-	width: 80%;
-	margin: 0 auto;
+.container1 {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .container {
   display: flex;
-  
+
   align-content: center;
   flex-direction: column;
   background-image: url(./images/Polygon-0.2s-2048px.svg);
@@ -15,8 +13,8 @@
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
- 
-  .portfoliotitle{
+
+  .portfoliotitle {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,247 +23,215 @@
     padding: 2em;
     margin-top: 2.1em;
   }
-  h1{
+  h1 {
     font-size: 2em;
-	color: #454647;
-    
+    color: #454647;
   }
-  p{
-	  color: #33816f;
-	  font-size: 20px;
+  p {
+    color: #33816f;
+    font-size: 20px;
   }
-
 }
 
-.menu-content{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	margin: 0 auto;
-	margin-top: 2em;
-	a{
-		color: #64FFDA ;
-		font-size: 2em;
-	}
-
+.menu-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2em;
+  a {
+    color: #64ffda;
+    font-size: 2em;
+  }
 }
 
-.menu-content a:hover{
-	color: white;
+.menu-content a:hover {
+  color: white;
 }
 
+.meta h5 {
+  width: 80%;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  margin-bottom: 0.5em;
 
-
-.meta h5{
-	width: 80%;
-	text-align: center;
-	font-size: 30px;
-	color: whitesmoke;
-	margin-bottom: 0.5em;
-
-	a{
-		color: whitesmoke;
-	}
+  a {
+    color: whitesmoke;
+  }
 }
 p.label {
-	width:80%;
-	font-size: 2em;
-	text-align:center;
-	color:#64FFDA;
-	font-size:15px;
-	line-height:20px;
-
-	
+  width: 80%;
+  font-size: 2em;
+  text-align: center;
+  color: #64ffda;
+  font-size: 15px;
+  line-height: 20px;
 }
-
-
-
 
 .projectList {
   display: flex;
   justify-content: center;
-	max-width:100%;
-	list-style:none;
-	padding-left:20em;
-	padding-right:15em;
-  
-  
-   
+  max-width: 100%;
+  list-style: none;
+  padding-left: 20em;
+  padding-right: 15em;
 }
 
-.project{
+.project {
   margin: 3em;
-  
-  
-  
-  
 }
-
 
 .projectList li {
-	min-width:40%;
- 
-	
+  min-width: 40%;
 }
 
-@media only screen and (max-width:1023px) {
-	.projectList li {
-		width:100%;
-   
-	}
-  .projectList{
-    flex-wrap: wrap;
-    padding: 10em;
+@media only screen and (max-width: 1023px) {
+  .projectList li {
+    width: 100%;
   }
-
+  .projectList {
+    flex-wrap: wrap;
+    padding: 15em;
+  }
 }
 
-@media only screen and (max-width:779px) {
-	.projectList li {
-		width:100%;
-    
-
-    
-	}
-  .projectList{
-    flex-wrap: wrap;
-    padding: 10em;
+@media only screen and (max-width: 779px) {
+  .projectList li {
+    width: 100%;
   }
-  
+  .projectList {
+    flex-wrap: wrap;
+    padding: 15em;
+  }
 }
 
-@media only screen and (max-width:539px) {
-	.projectList li {
-		width:100%;
-   
-	}
-  .projectList{
-    flex-wrap: wrap;
-    padding: 7em;
-    
+@media only screen and (max-width: 539px) {
+  .projectList li {
+    max-width: 80%;
   }
-  
- 
+  .projectList {
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 .projectList li .projectWrap {
-	width:100%;
-	float:left;
-	padding:100% 0 0 0;
-	position:relative;
+  width: 100%;
+  float: left;
+  padding: 100% 0 0 0;
+  position: relative;
 }
 
 .projectList li .projectWrap .inner {
-	width:100%;
-	height:100%;
-	position:absolute;
-	top:0;
-	left:0;
-	padding:10px;
-	overflow:hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .projectList li .projectWrap .inner .project {
-	width:100%;
-	height:100%;
-	
-	background:rgb(255, 255, 255);
-	border-radius:5px;
-	box-shadow:0px 2px 4px 1px rgba(56,72,84,0.1);
-	padding:5px;
-	position:relative;
-	overflow:hidden;
-	cursor:pointer;
-	
-	transition:transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projectList li .projectWrap .inner .project .innerWrap {
-	width:100%;
-	height:100%;
-	float:left;
+  width: 100%;
+  height: 100%;
+  float: left;
 
-	position:relative;
-	overflow:hidden;
-	border-radius:1px;
-	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  position: relative;
+  overflow: hidden;
+  border-radius: 1px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
 .projectList li .projectWrap .inner .project .innerWrap .image {
-	width:90%;
-	height:100%;
-	
-	float:left;
-	position:relative;
-	border-radius:1px;
-	background-size: contain;
-	background-position:  center;
-	background-repeat:no-repeat;
-	
+  width: 90%;
+  height: 100%;
 
-	transition:transform 0.3s ease;
+  float: left;
+  position: relative;
+  border-radius: 1px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: transform 0.3s ease;
 }
 
 .projectList li .projectWrap .inner .project .innerWrap .image:before {
-	content:'';
-	width:100%;
-	height:100%;
-	position:absolute;
-	border-radius:1px;
-	top:0;
-	left:0;
-	z-index:1;
-	background:rgba(56,72,84,0.5);
-	opacity:0;
-	
-	transition:opacity 0.3s ease;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(56, 72, 84, 0.5);
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
 }
 
 .projectList li .projectWrap .inner .project .innerWrap .metaWrap {
-	width:100%;
-	height:100%;
-	position:absolute;
-	bottom:0;
-	left:0;
-	z-index:2;
-	padding:0 0px 10px;
-	transform:translate3d(0px,20px,0px);
-	opacity:0;
-	
-	transition:transform 0.3s ease, opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 0px 10px;
+  transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .projectList li .projectWrap .inner .project .innerWrap .meta {
-	width:100%;
-	height:100%;
-	background:rgba(11,34,58,0.9);
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 34, 58, 0.9);
 
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .projectList li .projectWrap .inner .project:hover {
-	transform:translate3d(0px,-5px,0px);
-	box-shadow:0px 5px 8px 3px rgba(56,72,84,0.2);
+  transform: translate3d(0px, -5px, 0px);
+  box-shadow: 0px 5px 8px 3px rgba(56, 72, 84, 0.2);
 }
 
 .projectList li .projectWrap .inner .project:hover .image {
-	transform:scale(1);
+  transform: scale(1);
 }
 
 .projectList li .projectWrap .inner .project:hover .image:before {
-	opacity:1;
+  opacity: 1;
 }
 
 .projectList li .projectWrap .inner .project:hover .metaWrap {
-	transform:translate3d(0px,0px,0px);
-	opacity:1;
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
 }
 
 .projectList li .projectWrap .inner .project:hover .meta h5 {
-	transform:scale(1);
+  transform: scale(1);
 }
