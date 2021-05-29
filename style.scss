@@ -227,7 +227,7 @@ svg:hover {
   }
   .contactPage {
 
-    height: 50vh;
+    height: 60vh;
   }
 
     .aboutme {
@@ -246,7 +246,7 @@ svg:hover {
       
       .form-box .transtext{
       
-      bottom: 1%;
+      top: 0;
          
       }
     
@@ -260,6 +260,129 @@ svg:hover {
 
 
 } //the end
+
+
+
+@media only screen and (max-width: 779px) {
+
+  .contactPage {
+    flex-wrap: wrap-reverse;
+    transform: translate(-35%, -50%);
+    .aboutme {
+      min-width: 40%;
+      min-height: 30%;
+     
+    }
+      .transtext2 {
+        font-size: 2em;
+        bottom: 0;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+  
+      p {
+        text-align: justify;
+  
+        line-height: 1;
+        font-size: 11px;
+      }
+    }
+  
+
+    .techlogo {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 1em;
+    
+      a {
+        font-size: 1em;
+      }
+    }
+
+
+    .form-box {
+      min-width: 100%;
+      min-height: 30%;
+      padding: 20px;
+    
+      .transtext {
+        font-size: 2em;
+    
+        right: -1em;
+        bottom: 0.5em;
+      }
+    }
+
+    .form-box h1 {
+      color: white;
+    
+      font-size: 1.5em;
+    }
+
+    .form-box input[type="text"],
+    .form-box input[type="text"] {
+      border: 0;
+    
+      background: none;
+    
+      display: block;
+    
+      margin: 7px auto;
+    
+      text-align: center;
+    
+      border: 2px solid #3498db;
+    
+      padding: 4px 20px;
+    
+      width: 380px;
+    
+      outline: none;
+    
+      color: white;
+    
+      border-radius: 24px;
+    
+      transition: 0.25s;
+    }
+
+    .form-box input[type="text"]:focus,
+    .form-box input[type="text"]:focus {
+      width: 200px;
+    
+      border-color: #2ecc71;
+    }
+    .textarea {
+      height: 5em;
+    }
+
+    .form-box input[type="submit"] {
+      margin: 10px auto;
+    
+      padding: 14px 20px;
+    }
+
+
+    .close {
+      top: 15px;
+      width: 12px;
+      height: 12px;
+    }
+
+
+    #thankyou {
+      width: 60%;
+      height: 50%;
+      transform: translate(-30%, -50%);
+      h1 {
+        font-weight: bold;
+      }
+    }
+  }
+
 
 
 
