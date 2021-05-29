@@ -29,13 +29,17 @@ body {
 .wrapper {
   display: flex;
   position: relative;
-  background-image: url(./images/AnimatedShape.svg);
+  background-image: url(/build/svg/AnimatedShape.svg);
   background-repeat: no-repeat;
   background-size: cover;
   animation: t-animation 6s;
   height: 100vh;
 }
 
+.logo {
+  position: absolute;
+  top: -10%;
+}
 .logo svg {
   max-width: 7em;
 }
@@ -47,7 +51,7 @@ svg path {
   stroke-width: 2;
   stroke-dasharray: 2566;
   stroke-dashoffset: 2566;
-  animation: cloud 5s linear forwards 3;
+  animation: cloud 5s linear alternate 1;
 }
 
 svg:hover {
@@ -390,6 +394,7 @@ svg:hover {
 
     .portfoliotitle {
       display: flex;
+      margin-top: 2em;
     }
     h1 {
       font-size: 1.5em;
@@ -407,7 +412,7 @@ svg:hover {
     flex-wrap: wrap;
     width: 100vw;
     transform: translate(-15%);
-    margin-top: -6em;
+    margin-top: -5em;
   }
 
   .section {
