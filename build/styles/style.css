@@ -467,7 +467,7 @@ button::after, button::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../build/svg/Polygon-0.2s-2048px.svg);
+  background-image: url(../svg/Polygon.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -1081,7 +1081,7 @@ footer p a:hover {
   min-width: 40%;
   min-height: 100%;
   padding: 40px;
-  background-image: url(../build/svg/Polygon-0.2s-2048px.svg);
+  background-image: url(../svg/Polygon.svg);
   background-repeat: no-repeat;
 }
 
