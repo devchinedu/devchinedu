@@ -539,7 +539,6 @@ button::after, button::before {
   font-size: 30px;
   color: whitesmoke;
   margin-bottom: 0.5em;
-  margin: 0 auto;
 }
 
 .meta h5 a {
