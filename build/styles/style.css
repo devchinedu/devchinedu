@@ -1210,6 +1210,34 @@ footer p a:hover {
           animation: dropdown 0.5s 1;
 }
 
+@media screen and (min-width: 992px) {
+  .contactPage {
+    height: 80vh;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 602px) {
+  .contactPage {
+    height: 80vh;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .contactPage {
+    height: 80vh;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .contactPage {
+    height: 90vh;
+    width: 60vw;
+  }
+}
+
 .aboutme {
   min-width: 40%;
   min-height: 100%;
@@ -1232,9 +1260,51 @@ footer p a:hover {
   color: #0b223a;
 }
 
+@media screen and (min-width: 992px) {
+  .aboutme h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 602px) {
+  .aboutme h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .aboutme h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
 .aboutme .tinytext {
   font-weight: lighter;
   color: #0b223a;
+}
+
+@media screen and (min-width: 992px) {
+  .aboutme .tinytext {
+    margin-top: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 602px) {
+  .aboutme .tinytext {
+    margin-top: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .aboutme .tinytext {
+    margin-top: 2em;
+    text-align: center;
+  }
 }
 
 .aboutme p {
@@ -1277,6 +1347,24 @@ footer p a:hover {
   text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+  .form-box {
+    padding: 10px 1px;
+  }
+}
+
+@media screen and (min-width: 602px) {
+  .form-box {
+    padding: 10px 1px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .form-box {
+    padding: 10px 1px;
+  }
+}
+
 .form-box .transtext {
   font-size: 8em;
   font-weight: bolder;
@@ -1286,9 +1374,48 @@ footer p a:hover {
   bottom: 0.9em;
 }
 
+@media screen and (min-width: 992px) {
+  .form-box .transtext {
+    bottom: 0;
+    right: -1.8em;
+  }
+}
+
+@media screen and (min-width: 602px) {
+  .form-box .transtext {
+    bottom: 0;
+    right: -3em;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .form-box .transtext {
+    bottom: 0;
+    right: -1.8em;
+  }
+}
+
 .form-box h1 {
   color: white;
   font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .form-box h1 {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 602px) {
+  .form-box h1 {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .form-box h1 {
+    margin-top: 1em;
+  }
 }
 
 .form-box input[type="text"],
@@ -1296,7 +1423,7 @@ footer p a:hover {
   border: 0;
   background: none;
   display: block;
-  margin: 7px auto;
+  margin: 3em auto;
   text-align: center;
   border: 2px solid #3498db;
   padding: 14px 1px;
@@ -1306,6 +1433,27 @@ footer p a:hover {
   border-radius: 24px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+
+@media screen and (min-width: 992px) {
+  .form-box input[type="text"],
+  .form-box input[type="text"] {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 602px) {
+  .form-box input[type="text"],
+  .form-box input[type="text"] {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .form-box input[type="text"],
+  .form-box input[type="text"] {
+    width: 300px;
+  }
 }
 
 .form-box input[type="text"]:focus,
