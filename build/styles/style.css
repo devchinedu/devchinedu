@@ -804,7 +804,7 @@ footer p a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 75px;
-  background-image: url(../build/svg/RectLight.svg);
+  background-image: url(../svg/RectLight.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
