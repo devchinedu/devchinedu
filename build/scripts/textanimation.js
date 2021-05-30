@@ -39,8 +39,8 @@ wobbleElements.forEach(function(el){
 	});
 });
 
-var scene = document.getElementById('js-scene');
-var parallax = new Parallax(scene);
+// var scene = document.getElementById('js-scene');
+// var parallax = new Parallax(scene);
 
 // #scene{
 //     position: absolute;

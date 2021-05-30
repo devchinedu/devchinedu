@@ -1,24 +1,62 @@
+@import "./variables";
+
 .section {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 75px;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: row;
   background-image: url(../svg/RectLight.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  min-width: 100vw;
+  @include media-query(tablet) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include media-query(large-mobile) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include media-query(tablet-mini) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include media-query(desktop) {
+    flex-direction: row;
+  }
 }
+
 .skill-desc {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  transform: translateX(15%);
   width: 70%;
+  @include media-query(tablet) {
+    margin: 0 auto;
+    padding-left: 13em;
+    width: 70%;
+  }
+  @include media-query(large-mobile) {
+    margin: 0 auto;
+    padding-left: 10em;
+    width: 70%;
+  }
+
+  @include media-query(tablet-mini) {
+    margin: 0 auto;
+    padding-left: 13em;
+    width: 70%;
+  }
+  @include media-query(desktop) {
+    flex-direction: row;
+  }
 
   h2 {
-    line-height: 3;
+    width: 100%;
+    line-height: 1.5;
     color: white;
-    font-size: 4em;
+    font-size: 3em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -37,7 +75,7 @@
   }
   p {
     text-align: justify;
-    width: 70%;
+    width: 100%;
     color: white;
   }
   span {
@@ -57,10 +95,25 @@
 
 .wall {
   display: flex;
-  margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  padding: 2em;
+  @include media-query(tablet) {
+    margin: 0 auto;
+    padding-left: 13em;
+  }
+  @include media-query(large-mobile) {
+    margin: 0 auto;
+    padding-left: 13em;
+  }
+
+  @include media-query(tablet-mini) {
+    margin: 0 auto;
+    padding-left: 13em;
+  }
+  @include media-query(desktop) {
+    flex-direction: row;
+  }
 }
+
 .v-boxes {
   display: flex;
   flex-direction: column;

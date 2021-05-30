@@ -1,7 +1,4 @@
-.container1 {
-  width: 85%;
-  margin: 0 auto;
-}
+@import "./variables";
 
 .container {
   display: flex;
@@ -22,6 +19,7 @@
     line-height: 1.7;
     padding: 1em;
     margin-top: 0.5em;
+    margin: 0 auto;
   }
   h1 {
     font-size: 2em;
@@ -37,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 2em;
   a {
@@ -50,33 +48,51 @@
   color: white;
 }
 
+.meta {
+  display: flex;
+  justify-content: center;
+}
 .meta h5 {
-  width: 80%;
   text-align: center;
   font-size: 30px;
   color: whitesmoke;
   margin-bottom: 0.5em;
+  margin: 0 auto;
 
   a {
     color: whitesmoke;
   }
 }
 p.label {
-  width: 80%;
   font-size: 2em;
   text-align: center;
   color: #64ffda;
   font-size: 15px;
   line-height: 20px;
+  margin: 0 auto;
 }
 
 .projectList {
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  max-width: 85vw;
   list-style: none;
-  padding-left: 20em;
-  padding-right: 15em;
+  transform: translateX(11%);
+
+  @include media-query(large-mobile) {
+    flex-wrap: wrap;
+    max-width: 70vw;
+    transform: translateX(25%);
+  }
+
+  @include media-query(tablet-mini) {
+    flex-wrap: wrap;
+    max-width: 70vw;
+  }
+  @include media-query(desktop) {
+    flex-wrap: nowrap;
+    max-width: 70vw;
+  }
 }
 
 .project {
@@ -84,41 +100,41 @@ p.label {
 }
 
 .projectList li {
-  min-width: 40%;
+  width: 100vw;
 }
 
-@media only screen and (max-width: 1023px) {
-  .projectList li {
-    width: 100%;
-  }
-  .projectList {
-    flex-wrap: wrap;
-    padding: 15em;
-  }
-}
+// @media only screen and (max-width: 1023px) {
+//   .projectList li {
+//     width: 100%;
+//   }
+//   .projectList {
+//     flex-wrap: wrap;
+//     padding: 15em;
+//   }
+// }
 
-@media only screen and (max-width: 779px) {
-  .projectList li {
-    width: 100%;
-  }
-  .projectList {
-    flex-wrap: wrap;
-    padding: 15em;
-  }
-}
+// @media only screen and (max-width: 779px) {
+//   .projectList li {
+//     width: 100%;
+//   }
+//   .projectList {
+//     flex-wrap: wrap;
+//     padding: 15em;
+//   }
+// }
 
-@media only screen and (max-width: 539px) {
-  .projectList li {
-    max-width: 80%;
-  }
-  .projectList {
-    flex-wrap: wrap;
-    padding: 0;
-  }
-}
+// @media only screen and (max-width: 539px) {
+//   .projectList li {
+//     max-width: 80%;
+//   }
+//   .projectList {
+//     flex-wrap: wrap;
+//     padding: 0;
+//   }
+// }
 
 .projectList li .projectWrap {
-  width: 100%;
+  min-width: 100%;
   float: left;
   padding: 100% 0 0 0;
   position: relative;
