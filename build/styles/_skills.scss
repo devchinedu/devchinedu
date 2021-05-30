@@ -8,7 +8,6 @@
   background-image: url(../svg/RectLight.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   min-width: 100vw;
   @include media-query(tablet) {
     flex-direction: column;
@@ -69,6 +68,8 @@
     background-position: 100%;
     transition: background-position 575ms ease;
     text-decoration: none; // text decorations are clipped in WebKit browsers
+ 
+ 
     &:hover {
       background-position: 0 100%;
     }
@@ -77,6 +78,10 @@
     text-align: justify;
     width: 100%;
     color: white;
+ 
+    @include media-query(desktopimac) {
+     width: 75%;
+    }
   }
   span {
     color: #64ffda;

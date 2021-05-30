@@ -88,15 +88,27 @@ svg:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 7em;
+   
+ 
+    @include media-query(tablet) {
+      padding-left: 6em;
+    }
+    @include media-query(large-mobile) {
+      padding-left: 4em;
+    }
 
-    // @include media-query(large-mobile) {
-    //   transform: translateX(-14%);
-    // }
-    // @include media-query(desktop) {
-    //   transform: translateX(0%);
-    // }
+    @include media-query(tablet-mini) {
+      padding-left: 5em;
+    }
+    @include media-query(desktop) {
+      padding-left: 7em;
+    }
+    @include media-query(desktopimac) {
+      padding-left: 2em;
+    }
+
   }
+
   h1,
   p {
     color: rgb(240, 241, 255);
@@ -118,6 +130,9 @@ svg:hover {
     }
     @include media-query(desktop) {
       font-size: 5em;
+    }
+    @include media-query(desktopimac) {
+      font-size: 8em;
     }
   }
   p {
@@ -372,12 +387,13 @@ svg:hover {
   }
 
   .contactPage {
-    height: 90vh;
+    height: 80vh;
     flex-wrap: wrap-reverse;
     transform: translate(-50%, -50%);
+    z-index: 99999;
     .aboutme {
       min-width: 40%;
-      min-height: 30%;
+      min-height: 40%;
       padding: 20px;
     }
     .transtext2 {
@@ -385,12 +401,17 @@ svg:hover {
     }
     h2 {
       font-size: 1.5em;
+      text-align: center;
+    }
+    .tinytext{
+      margin-top: 1em;
+      text-align: center;
     }
 
     p {
       text-align: justify;
 
-      line-height: 1;
+      line-height: 2;
       font-size: 11px;
     }
   }
@@ -400,7 +421,7 @@ svg:hover {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    margin-top: 1em;
+    margin-top: 2em;
 
     a {
       font-size: 1em;
@@ -408,15 +429,16 @@ svg:hover {
   }
 
   .form-box {
-    min-width: 40%;
+    min-width: 50%;
     min-height: 30%;
-    padding: 20px;
+    padding: 1em 4em;
+   
 
     .transtext {
       font-size: 2em;
 
       right: -1em;
-      bottom: 0.5em;
+      top: 10%;
     }
   }
 
@@ -434,13 +456,13 @@ svg:hover {
 
     display: block;
 
-    margin: 7px auto;
+    margin: 2em auto;
 
     text-align: center;
 
     border: 2px solid #3498db;
 
-    padding: 4px 20px;
+    padding: 10px 20px;
 
     width: 180px;
 
