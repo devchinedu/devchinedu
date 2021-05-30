@@ -371,7 +371,43 @@ svg:hover {
   }
 
   .wrapper .sidebar {
+    display: flex;
+
+    width: 100vw;
+    height: 40px;
+
+    position: fixed;
+    z-index: 999;
+  }
+  .brandname {
+    visibility: hidden;
+    position: absolute;
+  }
+  .logo {
+    visibility: hidden;
+  }
+
+  .wrapper .sidebar .social_media {
     display: none;
+  }
+  .wrapper .sidebar ul {
+    display: flex;
+  }
+  .wrapper .sidebar ul li {
+    padding-right: 3px;
+    border-bottom: none;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .wrapper .sidebar ul li a {
+    color: #bdb8d7;
+    display: block;
+  }
+
+  .wrapper .sidebar ul li a .fas {
+    width: 15px;
+    padding-right: 7px;
   }
 
   .main_content {
