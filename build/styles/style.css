@@ -23,19 +23,6 @@ button::after, button::before {
   border-radius: 3px;
 }
 
-button span::after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  border-bottom: 0.2rem solid #64ffda;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  margin: 0 1rem;
-  -webkit-transform: translate(-1em, 0.7em);
-          transform: translate(-1em, 0.7em);
-}
-
 .shrink-border {
   background-color: transparent;
   color: #31ffce;
