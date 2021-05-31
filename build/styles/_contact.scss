@@ -356,6 +356,7 @@
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  z-index: 999;
 }
 .close:hover {
   opacity: 1;
@@ -380,6 +381,8 @@
   display: none;
   position: absolute;
   flex-direction: column;
+
+  justify-content: center;
   width: 30%;
   height: 45%;
   background-color: #091d31;
@@ -398,8 +401,10 @@
 
   h1 {
     color: whitesmoke;
-    font-weight: bolder;
-    padding: 2em;
+
+    padding: 1em;
+    font-size: 1.5em;
+    z-index: 1;
   }
   p {
     color: #64ffda;

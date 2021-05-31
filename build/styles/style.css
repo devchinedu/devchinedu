@@ -1648,6 +1648,7 @@ footer p a:hover {
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  z-index: 999;
 }
 
 .close:hover {
@@ -1681,6 +1682,9 @@ footer p a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30%;
   height: 45%;
   background-color: #091d31;
@@ -1698,8 +1702,9 @@ footer p a:hover {
 
 #thankyou h1 {
   color: whitesmoke;
-  font-weight: bolder;
-  padding: 2em;
+  padding: 1em;
+  font-size: 1.5em;
+  z-index: 1;
 }
 
 #thankyou p {
