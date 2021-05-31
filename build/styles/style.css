@@ -1196,8 +1196,8 @@ footer p a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70vw;
   height: 90vh;
+  width: 60vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1232,7 +1232,7 @@ footer p a:hover {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1200px) {
   .contactPage {
     height: 90vh;
     width: 60vw;
@@ -1240,11 +1240,16 @@ footer p a:hover {
 }
 
 .aboutme {
-  min-width: 40%;
-  min-height: 100%;
   padding: 40px;
   background-image: url(../svg/Polygon.svg);
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutme {
+    height: 100%;
+    width: 50%;
+  }
 }
 
 .aboutme .transtext2 {
@@ -1341,8 +1346,6 @@ footer p a:hover {
 }
 
 .form-box {
-  min-width: 50%;
-  min-height: 100%;
   padding: 30px;
   background: #091d31;
   text-align: center;
@@ -1363,6 +1366,14 @@ footer p a:hover {
 @media screen and (min-width: 786px) {
   .form-box {
     padding: 10px 1px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-box {
+    height: 100%;
+    width: 50%;
+    padding: 0px 40px 0;
   }
 }
 
@@ -1396,6 +1407,13 @@ footer p a:hover {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form-box .transtext {
+    bottom: 1em;
+    right: -1.8em;
+  }
+}
+
 .form-box h1 {
   color: white;
   font-weight: 500;
@@ -1414,6 +1432,12 @@ footer p a:hover {
 }
 
 @media screen and (min-width: 786px) {
+  .form-box h1 {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .form-box h1 {
     margin-top: 1em;
   }
@@ -1457,6 +1481,14 @@ footer p a:hover {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form-box input[type="text"],
+  .form-box input[type="text"] {
+    margin: 1em auto;
+    width: 250px;
+  }
+}
+
 .form-box input[type="text"]:focus,
 .form-box input[type="text"]:focus {
   width: 350px;
@@ -1465,6 +1497,12 @@ footer p a:hover {
 
 .textarea {
   height: 15em;
+}
+
+@media screen and (min-width: 1200px) {
+  .textarea {
+    height: 10em;
+  }
 }
 
 .form-box input[type="submit"] {

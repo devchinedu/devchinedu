@@ -1,9 +1,8 @@
 .contactPage {
   display: flex;
 
-  width: 70vw;
-
   height: 90vh;
+  width: 60vw;
 
   position: absolute;
 
@@ -34,18 +33,22 @@
     width: 80vw;
   }
 
-  @include media-query(desktopimac) {
+  @include media-query(desktop) {
     height: 90vh;
     width: 60vw;
   }
 }
 
 .aboutme {
-  min-width: 40%;
-  min-height: 100%;
+  // min-width: 40%;
+  // min-height: 100%;
   padding: 40px;
   background-image: url(../svg/Polygon.svg);
   background-repeat: no-repeat;
+  @include media-query(desktop) {
+    height: 100%;
+    width: 50%;
+  }
 
   .transtext2 {
     font-size: 8em;
@@ -117,8 +120,8 @@
 }
 
 .form-box {
-  min-width: 50%;
-  min-height: 100%;
+  // min-width: 50%;
+  // min-height: 100%;
   padding: 30px;
 
   background: #091d31;
@@ -134,6 +137,12 @@
     padding: 10px 1px;
   }
 
+  @include media-query(desktop) {
+    height: 100%;
+    width: 50%;
+    padding: 0px 40px 0;
+  }
+
   .transtext {
     font-size: 8em;
     font-weight: bolder;
@@ -141,6 +150,7 @@
     position: absolute;
     right: -1em;
     bottom: 0.9em;
+
     @include media-query(tablet) {
       bottom: 0;
       right: -1.8em;
@@ -152,6 +162,10 @@
 
     @include media-query(tablet-mini) {
       bottom: 0;
+      right: -1.8em;
+    }
+    @include media-query(desktop) {
+      bottom: 1em;
       right: -1.8em;
     }
   }
@@ -169,6 +183,9 @@
   }
 
   @include media-query(tablet-mini) {
+    margin-top: 1em;
+  }
+  @include media-query(desktop) {
     margin-top: 1em;
   }
 }
@@ -209,6 +226,10 @@
   @include media-query(tablet-mini) {
     width: 300px;
   }
+  @include media-query(desktop) {
+    margin: 1em auto;
+    width: 250px;
+  }
 }
 
 .form-box input[type="text"]:focus,
@@ -220,6 +241,9 @@
 
 .textarea {
   height: 15em;
+  @include media-query(desktop) {
+    height: 10em;
+  }
 }
 
 .form-box input[type="submit"] {
