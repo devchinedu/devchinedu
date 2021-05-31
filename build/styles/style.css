@@ -2318,19 +2318,17 @@ svg:hover {
     z-index: 99999;
   }
   .contactPage .aboutme {
-    min-width: 40%;
-    min-height: 30%;
     padding: 0px 15px 0;
   }
   .contactPage .transtext2 {
     font-size: 2em;
   }
   .contactPage h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
   }
   .contactPage .tinytext {
-    margin-top: 1em;
+    margin-top: 0.5em;
     text-align: center;
   }
   .contactPage p {
@@ -2354,7 +2352,6 @@ svg:hover {
   }
   .form-box {
     min-width: 100%;
-    min-height: 50%;
     padding: 20px 0 0px;
   }
   .form-box .transtext {
@@ -2364,7 +2361,7 @@ svg:hover {
   }
   .form-box h1 {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .form-box input[type="text"],
   .form-box input[type="text"] {
@@ -2375,7 +2372,7 @@ svg:hover {
     text-align: center;
     border: 2px solid #3498db;
     padding: 2px 20px;
-    width: 180px;
+    width: 150px;
     outline: none;
     color: white;
     border-radius: 24px;
@@ -2384,7 +2381,7 @@ svg:hover {
   }
   .form-box input[type="text"]:focus,
   .form-box input[type="text"]:focus {
-    width: 185px;
+    width: 160px;
     border-color: #2ecc71;
   }
   .textarea {
