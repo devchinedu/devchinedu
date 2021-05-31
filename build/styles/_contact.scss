@@ -20,17 +20,17 @@
 
   animation: dropdown 0.5s 1;
   @include media-query(tablet) {
-    height: 80vh;
-    width: 80vw;
+    height: 90vh;
+    width: 60vw;
   }
   @include media-query(large-mobile) {
-    height: 80vh;
-    width: 80vw;
+    height: 90vh;
+    width: 70vw;
   }
 
   @include media-query(tablet-mini) {
-    height: 80vh;
-    width: 80vw;
+    height: 90vh;
+    width: 60vw;
   }
 
   @include media-query(desktop) {
@@ -45,6 +45,20 @@
   padding: 40px;
   background-image: url(../svg/Polygon.svg);
   background-repeat: no-repeat;
+  z-index: -2;
+  @include media-query(tablet) {
+    height: 100%;
+    width: 50%;
+  }
+  @include media-query(large-mobile) {
+    height: 100%;
+    width: 50%;
+  }
+
+  @include media-query(tablet-mini) {
+    height: 100%;
+    width: 50%;
+  }
   @include media-query(desktop) {
     height: 100%;
     width: 50%;
@@ -57,6 +71,7 @@
     position: absolute;
     bottom: 0;
     left: -0.5em;
+    z-index: -1;
   }
   h2 {
     font-size: 4em;
@@ -66,7 +81,7 @@
       text-align: center;
     }
     @include media-query(large-mobile) {
-      font-size: 2em;
+      font-size: 1.2em;
       text-align: center;
     }
 
@@ -97,6 +112,23 @@
 
     line-height: 1.5;
     font-size: 18px;
+    @include media-query(tablet) {
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    @include media-query(large-mobile) {
+      line-height: 1.2;
+      font-size: 12px;
+    }
+
+    @include media-query(tablet-mini) {
+      line-height: 1.2;
+      font-size: 15px;
+    }
+    @include media-query(desktop) {
+      line-height: 1.5;
+      font-size: 18px;
+    }
   }
   span {
     color: rgb(145, 8, 8);
@@ -108,11 +140,25 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  margin-top: 3em;
+  margin-top: 2.5em;
 
   a {
     font-size: 3em;
     color: #0b223a;
+    @include media-query(tablet) {
+      font-size: 2em;
+    }
+    @include media-query(large-mobile) {
+      font-size: 1.5em;
+      width: 100%;
+    }
+
+    @include media-query(tablet-mini) {
+      font-size: 2em;
+    }
+    @include media-query(desktop) {
+      font-size: 2em;
+    }
   }
   &:hover {
     animation: sheen 0.3s 1;
@@ -126,15 +172,22 @@
 
   background: #091d31;
   text-align: center;
+  z-index: -2;
   @include media-query(tablet) {
-    padding: 10px 1px;
+    height: 100%;
+    width: 50%;
+    padding: 0px 20px 0;
   }
   @include media-query(large-mobile) {
-    padding: 10px 1px;
+    height: 100%;
+    width: 50%;
+    padding: 0px 20px 0;
   }
 
   @include media-query(tablet-mini) {
-    padding: 10px 1px;
+    height: 100%;
+    width: 50%;
+    padding: 0px 20px 0;
   }
 
   @include media-query(desktop) {
@@ -150,18 +203,19 @@
     position: absolute;
     right: -1em;
     bottom: 0.9em;
+    z-index: -1;
 
     @include media-query(tablet) {
-      bottom: 0;
+      bottom: 1.1;
       right: -1.8em;
     }
     @include media-query(large-mobile) {
-      bottom: 0;
+      bottom: 1.2;
       right: -3em;
     }
 
     @include media-query(tablet-mini) {
-      bottom: 0;
+      bottom: 1.5em;
       right: -1.8em;
     }
     @include media-query(desktop) {
@@ -218,13 +272,19 @@
 
   @include media-query(tablet) {
     width: 200px;
+    padding: 7px 1px;
+    margin: 1em auto;
   }
   @include media-query(large-mobile) {
     width: 200px;
+    padding: 7px 1px;
+    margin: 1em auto;
   }
 
   @include media-query(tablet-mini) {
-    width: 300px;
+    width: 200px;
+    padding: 7px 1px;
+    margin: 1em auto;
   }
   @include media-query(desktop) {
     margin: 1em auto;
@@ -237,6 +297,19 @@
   width: 350px;
 
   border-color: #2ecc71;
+  @include media-query(tablet) {
+    width: 205px;
+  }
+  @include media-query(large-mobile) {
+    width: 205px;
+  }
+
+  @include media-query(tablet-mini) {
+    width: 205px;
+  }
+  @include media-query(desktop) {
+    width: 255px;
+  }
 }
 
 .textarea {
