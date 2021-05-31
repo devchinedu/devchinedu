@@ -1,4 +1,4 @@
-$offwhite: #b5ffee;
+$offwhite: #daf5ef;
 $darkblue: #64ffda;
 
 button {
@@ -21,6 +21,17 @@ button {
   &::before {
     border-radius: 3px;
   }
+}
+button span::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  border-bottom: 0.2rem solid $darkblue;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+  transform: translate(-1em, 0.7em);
 }
 
 .shrink-border {
