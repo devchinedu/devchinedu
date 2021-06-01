@@ -20,16 +20,16 @@
 
   animation: dropdown 0.5s 1;
   @include media-query(tablet) {
-    height: 70vh;
+    height: 60vh;
     width: 40vw;
   }
   @include media-query(large-mobile) {
-    height: 70vh;
+    height: 60vh;
     width: 50vw;
   }
 
   @include media-query(tablet-mini) {
-    height: 70vh;
+    height: 60vh;
     width: 40vw;
   }
 

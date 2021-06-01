@@ -1191,21 +1191,21 @@ footer p a:hover {
 
 @media screen and (min-width: 992px) {
   .contactPage {
-    height: 70vh;
+    height: 60vh;
     width: 40vw;
   }
 }
 
 @media screen and (min-width: 602px) {
   .contactPage {
-    height: 70vh;
+    height: 60vh;
     width: 50vw;
   }
 }
 
 @media screen and (min-width: 786px) {
   .contactPage {
-    height: 70vh;
+    height: 60vh;
     width: 40vw;
   }
 }
