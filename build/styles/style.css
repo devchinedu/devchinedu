@@ -2139,7 +2139,6 @@ svg:hover {
   .main_content .header h5 {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 1em;
   }
   .header .css-typing p {
     padding: 0;
@@ -2149,9 +2148,22 @@ svg:hover {
             justify-content: center;
     line-height: 2;
     font-size: 15px;
-    margin-top: 2.5em;
     width: 23em;
     white-space: normal;
+  }
+  .techlogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .techlogo a {
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
   }
   .container {
     max-width: 100vw;
