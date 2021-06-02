@@ -172,7 +172,7 @@ body {
     @include media-query(desktop) {
       font-size: 2em;
       padding-right: 1.5em;
-      margin-top: 1.2em;
+      margin-top: 1em;
     }
     @include media-query(desktopimac) {
       font-size: 3em;
@@ -215,7 +215,7 @@ body {
       }
       @include media-query(desktop) {
         font-size: 15px;
-        margin-top: 1.5em;
+        margin-top: 1em;
       
       }
       @include media-query(desktopimac) {

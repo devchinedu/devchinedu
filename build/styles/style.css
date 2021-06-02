@@ -1690,7 +1690,7 @@ body {
   .techlogo a {
     font-size: 2em;
     padding-right: 1.5em;
-    margin-top: 1.2em;
+    margin-top: 1em;
   }
 }
 
@@ -1736,7 +1736,7 @@ body {
 @media screen and (min-width: 1200px) {
   .header .css-typing p {
     font-size: 15px;
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
 }
 
