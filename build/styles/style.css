@@ -502,6 +502,27 @@ button::after, button::before {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 30px;
+  margin: 1em;
+}
+
+.p-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  margin: 2em;
+}
+
+.p-header h1 {
+  padding-top: 1em;
 }
 
 .p-image img {
@@ -521,6 +542,8 @@ button::after, button::before {
 .p-desc .heading {
   font-size: 1.8em;
   padding-bottom: 0.3em;
+  color: #0b223a;
+  text-transform: uppercase;
 }
 
 .p-desc .subheading {
@@ -543,7 +566,12 @@ button::after, button::before {
 .techIcon a {
   font-size: 3em;
   padding-right: 1.8em;
-  color: yellowgreen;
+  color: #0b223a;
+}
+
+.buttons button {
+  background-color: #0b223a;
+  color: #64ffda;
 }
 
 footer {
@@ -1451,7 +1479,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background-color: #0b223a;
+  background-image: url(../svg/AnimatedShape.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-animation: t-animation 6s;
@@ -1469,10 +1497,6 @@ body {
           justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-image: url(../svg/ColoredShapes.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 50%;
   -webkit-animation: t-animation 6s;
           animation: t-animation 6s;
 }

@@ -3,7 +3,7 @@
 (function() {
   
     document.addEventListener("mousemove", parallax);
-    const elem = document.querySelector(".main_content");
+    const elem = document.querySelector(".wrapper");
  
     function parallax(e) {
         let _w = window.innerWidth/2;

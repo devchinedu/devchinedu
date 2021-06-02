@@ -32,8 +32,8 @@ body {
 .wrapper {
   display: flex;
   position: relative;
-  // background-image: url(../svg/AnimatedShape.svg);
-  background-color: #0b223a;
+  background-image: url(../svg/AnimatedShape.svg);
+  // background-color: #0b223a;
   background-repeat: no-repeat;
   background-size: cover;
   animation: t-animation 6s;
@@ -46,10 +46,10 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-image: url(../svg/ColoredShapes.svg);
-  background-repeat: no-repeat;
-background-position: center;
-background-position: 50% 50%;
+//   background-image:url(../svg/4.svg);
+//   background-repeat: no-repeat;
+// background-position: center;
+// background-position: 50% 50%;
 
   animation: t-animation 6s;
 
