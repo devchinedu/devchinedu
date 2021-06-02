@@ -458,7 +458,7 @@ button::after, button::before {
   --lightblue: hsl(162, 62%, 65%);
 }
 
-.container {
+.portofolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,228 +475,40 @@ button::after, button::before {
   min-width: 100vw;
 }
 
-.container .portfoliotitle {
+.projectlist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-  line-height: 1.7;
-  padding: 1em;
-  margin-top: 0.5em;
-  margin: 0 auto;
-}
-
-.container h1 {
-  font-size: 3em;
-  color: #454647;
-}
-
-.container p {
-  color: #33816f;
-  font-size: 20px;
-}
-
-.menu-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 2em;
-}
-
-.menu-content a {
-  color: #64ffda;
-  font-size: 2em;
-}
-
-.menu-content a:hover {
-  color: white;
-}
-
-.meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.meta h5 {
-  text-align: center;
-  font-size: 30px;
-  color: whitesmoke;
-  margin-bottom: 0.5em;
-}
-
-.meta h5 a {
-  color: whitesmoke;
-}
-
-p.label {
-  font-size: 2em;
-  text-align: center;
-  color: #64ffda;
-  font-size: 15px;
-  line-height: 20px;
-  margin: 0 auto;
-}
-
-.projectList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   max-width: 85vw;
-  list-style: none;
   -webkit-transform: translateX(11%);
           transform: translateX(11%);
 }
 
-@media screen and (min-width: 602px) {
-  .projectList {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 70vw;
-    -webkit-transform: translateX(25%);
-            transform: translateX(25%);
-  }
-}
-
-@media screen and (min-width: 786px) {
-  .projectList {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 70vw;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projectList {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    max-width: 70vw;
-  }
-}
-
 .project {
-  margin: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
 }
 
-.projectList li {
-  width: 100vw;
+.p-image img {
+  width: 55em;
 }
 
-.projectList li .projectWrap {
-  min-width: 100%;
-  float: left;
-  padding: 100% 0 0 0;
-  position: relative;
-}
-
-.projectList li .projectWrap .inner {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  overflow: hidden;
-}
-
-.projectList li .projectWrap .inner .project {
-  width: 100%;
-  height: 100%;
-  background: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
-          box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
-  padding: 5px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-}
-
-.projectList li .projectWrap .inner .project .innerWrap {
-  width: 100%;
-  height: 100%;
-  float: left;
-  position: relative;
-  overflow: hidden;
-  border-radius: 1px;
-  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-}
-
-.projectList li .projectWrap .inner .project .innerWrap .image {
-  width: 90%;
-  height: 100%;
-  float: left;
-  position: relative;
-  border-radius: 1px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.projectList li .projectWrap .inner .project .innerWrap .image:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 1px;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: rgba(56, 72, 84, 0.5);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.projectList li .projectWrap .inner .project .innerWrap .metaWrap {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  padding: 0 0px 10px;
-  -webkit-transform: translate3d(0px, 20px, 0px);
-          transform: translate3d(0px, 20px, 0px);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.projectList li .projectWrap .inner .project .innerWrap .meta {
-  width: 100%;
-  height: 100%;
-  background: rgba(11, 34, 58, 0.9);
+.p-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,38 +516,34 @@ p.label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
-.projectList li .projectWrap .inner .project:hover {
-  -webkit-transform: translate3d(0px, -5px, 0px);
-          transform: translate3d(0px, -5px, 0px);
-  -webkit-box-shadow: 0px 5px 8px 3px rgba(56, 72, 84, 0.2);
-          box-shadow: 0px 5px 8px 3px rgba(56, 72, 84, 0.2);
+.p-desc .heading {
+  font-size: 1.8em;
+  padding-bottom: 0.3em;
 }
 
-.projectList li .projectWrap .inner .project:hover .image {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.p-desc .subheading {
+  font-size: 1.4em;
+  padding-bottom: 0.3em;
 }
 
-.projectList li .projectWrap .inner .project:hover .image:before {
-  opacity: 1;
+.p-desc .description {
+  width: 27em;
+  text-align: justify;
+  padding-bottom: 0.3em;
 }
 
-.projectList li .projectWrap .inner .project:hover .metaWrap {
-  -webkit-transform: translate3d(0px, 0px, 0px);
-          transform: translate3d(0px, 0px, 0px);
-  opacity: 1;
+.techIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.projectList li .projectWrap .inner .project:hover .meta h5 {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.techIcon a {
+  font-size: 3em;
+  padding-right: 1.8em;
+  color: yellowgreen;
 }
 
 footer {
@@ -762,7 +570,7 @@ footer .footer--content {
 
 @media screen and (min-width: 992px) {
   footer .footer--content {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
@@ -773,6 +581,18 @@ footer .footer--content {
 }
 
 @media screen and (min-width: 786px) {
+  footer .footer--content {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .footer--content {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
   footer .footer--content {
     font-size: 1em;
   }
@@ -1701,8 +1521,8 @@ body {
 }
 
 .main_content .header h1 {
-  color: #f0f1ff;
-  font-size: 5em;
+  color: #e0e1fa;
+  font-size: 4em;
   -webkit-animation: squash 0.9s 1;
           animation: squash 0.9s 1;
 }
@@ -1735,7 +1555,7 @@ body {
 
 @media screen and (min-width: 1920px) {
   .main_content .header h1 {
-    font-size: 8em;
+    font-size: 6em;
   }
 }
 
@@ -1773,6 +1593,11 @@ body {
   .main_content .header h5 {
     font-size: 4em;
   }
+}
+
+.header p {
+  font-size: 15px;
+  color: #64ffda;
 }
 
 .techlogo {

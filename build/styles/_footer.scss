@@ -9,7 +9,7 @@ footer {
     display: flex;
     flex-direction: column;
     @include media-query(tablet) {
-      font-size: 2em;
+      font-size: 1em;
     }
     @include media-query(large-mobile) {
       font-size: 0.8em;
@@ -19,6 +19,10 @@ footer {
       font-size: 1em;
     }
     @include media-query(desktop) {
+      font-size: 1em;
+    }
+    @include media-query(desktopimac) {
+      font-size: 1em;
     }
 
     img {
