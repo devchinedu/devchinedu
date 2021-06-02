@@ -78,8 +78,8 @@ background-position: 50% 50%;
       padding-left: 2em;
     }
     h1{
-      color: rgb(240, 241, 255);
-      font-size: 5em;
+      color: rgb(224, 225, 250);
+      font-size: 4em;
       animation: squash 0.9s 1;
   
       @include media-query(tablet) {
@@ -99,7 +99,7 @@ background-position: 50% 50%;
         font-size: 5em;
       }
       @include media-query(desktopimac) {
-        font-size: 8em;
+        font-size: 6em;
       }
     }
     h5 {
@@ -125,11 +125,17 @@ background-position: 50% 50%;
       @include media-query(desktopimac) {
         font-size: 4em;
       }
+    
     }
   }
   
   }
+.header p{
+ 
+    font-size: 15px;
+    color: #64ffda;
 
+}
 
   
 
