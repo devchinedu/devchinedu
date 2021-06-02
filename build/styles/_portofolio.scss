@@ -282,6 +282,7 @@
   flex-direction: column;
   max-width: 85vw;
   transform: translateX(11%);
+  
 }
 
 
@@ -292,6 +293,8 @@
   padding: 30px;
 
   margin: 1em;
+ 
+
   
 }
 
@@ -305,45 +308,79 @@
   margin: 2em;
   h1{
     padding-top: 1em;
+    font-weight: normal;
   }
+}
+
+.p-header h1::after{
+  display: inline-block;
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid rgb(148, 147, 147);
+    width: 36rem;
+    margin: 0 1rem;
+    transform: translate(0.1em, 0.7em);
 }
 
 .p-image img{
   width: 55em;
+  
 }
 
 .p-desc{
   display: flex;
   flex-direction: column;
+ 
   
   .heading{
-    font-size: 1.8em;
-    padding-bottom: 0.3em;
+    font-size: 1.5em;
+
     color: #0b223a;
     text-transform: uppercase;
+    padding-bottom: 9em;
   }
   .subheading{
-    font-size: 1.4em;
+    font-size: 1em;
+    text-decoration: underline;
     padding-bottom: 0.3em;
   }
   .description{
-    width: 27em;
+    font-size: 15x;
+    width: 25em;
     text-align: justify;
     padding-bottom: 0.3em;
+
   }
 }
+
+
+.heading::before{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid rgb(148, 147, 147);
+  width: 44em;
+  margin: 0 1rem;
+  transform: translate(-46em, 0.7em);
+}
+
+
+
+
 
 .techIcon{
   display: flex;
   a{
-    font-size: 3em;
-    padding-right: 1.8em;
+    font-size: 1.2em;
+    padding-right: 1.5em;
     color: #0b223a;
   }
  
 }
 
 .buttons button{
-  background-color: #0b223a;
-  color: #64ffda;
+  background-color: white;
+  color: #0b223a;
+ border: 1px solid #487eb8;
+  
 }

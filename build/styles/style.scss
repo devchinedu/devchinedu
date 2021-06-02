@@ -46,10 +46,12 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  // background-image: url(../svg/Dlogo.svg);
 //   background-image:url(../svg/4.svg);
 //   background-repeat: no-repeat;
 // background-position: center;
-// background-position: 50% 50%;
+// background-position: top left;
+// background-position-x: 10%;
 
   animation: t-animation 6s;
 
@@ -96,10 +98,10 @@ body {
         white-space: nowrap;
       }
       @include media-query(desktop) {
-        font-size: 5em;
+        font-size: 4em;
       }
       @include media-query(desktopimac) {
-        font-size: 6em;
+        font-size: 5em;
       }
     }
     h5 {
@@ -152,7 +154,7 @@ body {
     font-size: 3em;
     color: #64ffda;
     padding-right: 2em;
-       
+ 
     @include media-query(tablet) {
       font-size: 1.5em;
       padding-right: 1em;
@@ -177,13 +179,15 @@ body {
     }
 
   }
-  &:hover {
-    animation: sheen 0.3s 1;
-  }
+  
 }
 
 
-
+.techlogo a:hover{
+    color: white;
+   
+  
+}
 
 
  .header .css-typing p
@@ -226,7 +230,8 @@ body {
   top: -10%;
 }
 .logo svg {
-  max-width: 7em;
+  max-width: 3em;
+  padding: 3em;
 }
 
 svg path {
@@ -236,7 +241,7 @@ svg path {
   stroke-width: 2;
   stroke-dasharray: 2566;
   stroke-dashoffset: 2566;
-  animation: cloud 5s linear alternate 2;
+  animation: cloud 4s forwards  2;
 }
 
 svg:hover {
@@ -313,7 +318,7 @@ padding: 15px;
   background-color: rgba(28, 83, 142, 0.4);
 }
 
-.wrapper .sidebar ul li:hover a {
+.wrapper .sidebar ul li:hover  {
   color: #64ffda;
 }
 
