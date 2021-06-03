@@ -47,7 +47,7 @@ body {
   height: 100vh;
   width: 100vw;
   // background-image: url(../svg/Dlogo.svg);
-//   background-image:url(../svg/4.svg);
+//   background-image:url(../svg/d1.svg);
 //   background-repeat: no-repeat;
 // background-position: center;
 // background-position: top left;
@@ -107,6 +107,7 @@ body {
     h5 {
       color: #ccd6f6;
       font-size: 4em;
+      animation: squash 0.9s 1;
    
       @include media-query(tablet) {
         font-size: 1.5em;
@@ -230,9 +231,11 @@ body {
 
 svg {
 position: absolute;
-padding: 4em;
+margin: 3em;
 top: 0;
 max-width: 3em;
+z-index: -1;
+
  
 }
 
