@@ -458,6 +458,215 @@ button::after, button::before {
   --lightblue: hsl(162, 62%, 65%);
 }
 
+.portfoliotitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  line-height: 1.7;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin: 0 auto;
+}
+
+.portfoliotitle h1 {
+  font-size: 3em;
+  color: #454647;
+}
+
+.portfoliotitle p {
+  color: #33816f;
+  font-size: 20px;
+}
+
+.meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meta h5 {
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  margin-bottom: 0.5em;
+}
+
+.meta h5 a {
+  color: whitesmoke;
+}
+
+p.label {
+  font-size: 2em;
+  text-align: center;
+  color: #64ffda;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 auto;
+}
+
+.projectList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projectList li {
+  width: 25em;
+}
+
+.projectList li .projectWrap {
+  min-width: 100%;
+  float: left;
+  padding: 100% 0 0 0;
+  position: relative;
+}
+
+.projectList li .projectWrap .inner {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.projectList li .projectWrap .inner .project {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
+          box-shadow: 0px 2px 4px 1px rgba(56, 72, 84, 0.1);
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.projectList li .projectWrap .inner .project .innerWrap {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1px;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.projectList li .projectWrap .inner .project .innerWrap .image {
+  width: 90%;
+  height: 100%;
+  float: left;
+  position: relative;
+  border-radius: 1px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.projectList li .projectWrap .inner .project .innerWrap .image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(56, 72, 84, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.projectList li .projectWrap .inner .project .innerWrap .metaWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 0px 10px;
+  -webkit-transform: translate3d(0px, 20px, 0px);
+          transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.projectList li .projectWrap .inner .project .innerWrap .meta {
+  width: 90%;
+  height: 100%;
+  background: rgba(11, 34, 58, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.projectList li .projectWrap .inner .project:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+          transform: translate3d(0px, -5px, 0px);
+  -webkit-box-shadow: 0px 5px 8px 3px rgba(56, 72, 84, 0.2);
+          box-shadow: 0px 5px 8px 3px rgba(56, 72, 84, 0.2);
+}
+
+.projectList li .projectWrap .inner .project:hover .image {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.projectList li .projectWrap .inner .project:hover .image:before {
+  opacity: 1;
+}
+
+.projectList li .projectWrap .inner .project:hover .metaWrap {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+}
+
+.projectList li .projectWrap .inner .project:hover .meta h5 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .portofolio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,7 +677,7 @@ button::after, button::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../svg/Polygon.svg);
+  background-color: #0e2a47;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -524,13 +733,18 @@ button::after, button::before {
 .p-header h1 {
   padding-top: 1em;
   font-weight: normal;
+  color: #CCD6F6;
+}
+
+.p-header p {
+  color: #64ffda;
 }
 
 .p-header h1::after {
   display: inline-block;
   position: absolute;
   content: "";
-  border-bottom: 1px solid #949393;
+  border-bottom: 1px solid #dafff6;
   width: 36rem;
   margin: 0 1rem;
   -webkit-transform: translate(0.1em, 0.7em);
@@ -539,6 +753,7 @@ button::after, button::before {
 
 .p-image img {
   width: 55em;
+  padding: 4em;
 }
 
 .p-desc {
@@ -549,11 +764,12 @@ button::after, button::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #CCD6F6;
 }
 
 .p-desc .heading {
   font-size: 1.5em;
-  color: #0b223a;
+  color: #CCD6F6;
   text-transform: uppercase;
   padding-bottom: 9em;
 }
@@ -575,11 +791,17 @@ button::after, button::before {
   display: inline-block;
   position: absolute;
   content: "";
-  border-bottom: 1px solid #949393;
+  border-bottom: 1px solid #dafff6;
   width: 44em;
   margin: 0 1rem;
   -webkit-transform: translate(-46em, 0.7em);
           transform: translate(-46em, 0.7em);
+}
+
+.pdesc {
+  background-color: #0b223a;
+  padding: 1em;
+  border-radius: 1em;
 }
 
 .techIcon {
@@ -591,7 +813,7 @@ button::after, button::before {
 .techIcon a {
   font-size: 1.2em;
   padding-right: 1.5em;
-  color: #0b223a;
+  color: #64ffda;
 }
 
 .buttons button {
