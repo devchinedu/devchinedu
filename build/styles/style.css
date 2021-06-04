@@ -690,10 +690,10 @@ p.label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 55em;
-  height: 25em;
-  margin: 1em  auto;
-  margin-bottom: 20em;
+  width: 25em;
+  height: 30em;
+  margin: 1em auto;
+  margin-bottom: 10em;
   background-color: whitesmoke;
   padding: 1em;
   border-radius: 0.5em;
@@ -701,14 +701,48 @@ p.label {
           box-shadow: 0px 5px 18px 3px rgba(199, 219, 235, 0.2);
 }
 
+@media screen and (min-width: 1200px) {
+  .projectlist {
+    width: 55em;
+    height: 25em;
+    margin-bottom: 20em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .projectlist {
+    width: 55em;
+    height: 25em;
+    margin-bottom: 20em;
+  }
+}
+
 .pholder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .pholder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .pholder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .project {
@@ -743,7 +777,7 @@ p.label {
 .p-header h1 {
   padding-top: 1em;
   margin-bottom: 5em;
-  color: #CCD6F6;
+  color: #ccd6f6;
 }
 
 .p-header p {
@@ -762,13 +796,37 @@ p.label {
 }
 
 .p-image img {
-  width: 30em;
-  padding: 3.2em;
+  width: 22em;
   z-index: 999;
-  margin-top: -11em;
+  margin-top: -10em;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  border-radius: 3.5em;
+  border-radius: 1.9em;
+  padding: 1.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-image img {
+    width: 30em;
+    padding: 3.2em;
+    z-index: 999;
+    margin-top: -11em;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    border-radius: 3.5em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .p-image img {
+    width: 30em;
+    padding: 3.2em;
+    z-index: 999;
+    margin-top: -11em;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    border-radius: 3.5em;
+  }
 }
 
 .p-image img:hover {
@@ -777,10 +835,25 @@ p.label {
 }
 
 .heading {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 2em;
   color: #153f69;
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    padding-bottom: 2em;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .heading {
+    padding-bottom: 2em;
+    font-size: 1.5em;
+  }
 }
 
 .heading::after {
@@ -798,17 +871,53 @@ p.label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .p-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .p-desc .description {
-  font-size: 15x;
-  width: 15em;
+  font-size: 14px;
+  width: 24em;
   color: #272727;
   text-align: justify;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-desc .description {
+    font-size: 15px;
+    width: 15em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .p-desc .description {
+    font-size: 15px;
+    width: 15em;
+  }
 }
 
 .techIcon {
@@ -821,13 +930,27 @@ p.label {
 }
 
 .techIcon a {
-  font-size: 2.5em;
+  font-size: 2em;
   padding-right: 1.5em;
   color: #153f69;
 }
 
+@media screen and (min-width: 1200px) {
+  .techIcon a {
+    font-size: 2.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .techIcon a {
+    font-size: 2.5em;
+    padding-right: 1.5em;
+  }
+}
+
 .techIcon a:hover {
-  color: #017BFF;
+  color: #017bff;
 }
 
 .techIcon li:hover {
@@ -851,23 +974,63 @@ p.label {
 button {
   background-color: #153f69;
   color: whitesmoke;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 button:hover {
-  background-color: #017BFF;
+  background-color: #017bff;
   border: none;
   color: #daf5ef;
 }
 
 .bigbtn {
-  width: 8.2em;
-  margin-right: 0.2em;
+  margin: 0;
+  padding: 0;
+  width: 6em;
+  height: 3em;
+  font-size: 11px;
+  margin-right: 0.3em;
+}
+
+@media screen and (min-width: 1200px) {
+  .bigbtn {
+    width: 7em;
+    margin: 1em 0.5em 1em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .bigbtn {
+    width: 8.2em;
+    margin-right: 0.2em;
+  }
 }
 
 .smallbtn {
+  margin: 0;
   width: 2em;
+  padding: 0;
+  height: 3em;
+  font-size: 11px;
+  margin-right: 0.2em;
+}
+
+@media screen and (min-width: 1200px) {
+  .smallbtn {
+    width: 2em;
+    margin: 1em 0em 1em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .smallbtn {
+    width: 2em;
+    margin: 1em 0em 1em;
+    font-size: 1em;
+  }
 }
 
 footer {
@@ -1320,8 +1483,8 @@ footer p a:hover {
 
 .contactPage {
   display: none;
-  height: 70vh;
-  width: 35vw;
+  height: 35em;
+  width: 25em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1337,29 +1500,29 @@ footer p a:hover {
 
 @media screen and (min-width: 992px) {
   .contactPage {
-    height: 60vh;
-    width: 40vw;
+    height: 35em;
+    width: 25em;
   }
 }
 
 @media screen and (min-width: 602px) {
   .contactPage {
-    height: 60vh;
-    width: 50vw;
+    height: 35em;
+    width: 25em;
   }
 }
 
 @media screen and (min-width: 786px) {
   .contactPage {
-    height: 60vh;
-    width: 40vw;
+    height: 35em;
+    width: 25em;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contactPage {
-    height: 70vh;
-    width: 30vw;
+    height: 35em;
+    width: 25em;
   }
 }
 
@@ -1418,7 +1581,7 @@ footer p a:hover {
 
 .form-box h1 {
   color: white;
-  margin-top: 2em;
+  margin-top: 1em;
   font-weight: 500;
 }
 
@@ -2025,7 +2188,7 @@ body {
 
 svg {
   position: absolute;
-  margin: 3em;
+  margin: 2px 3.5em auto;
   top: 0;
   max-width: 3em;
   z-index: -1;
@@ -2037,8 +2200,8 @@ svg path {
   stroke-width: 2;
   stroke-dasharray: 2566;
   stroke-dashoffset: 2566;
-  -webkit-animation: cloud 4s forwards  2;
-          animation: cloud 4s forwards  2;
+  -webkit-animation: cloud 4s forwards 2;
+          animation: cloud 4s forwards 2;
 }
 
 svg:hover {

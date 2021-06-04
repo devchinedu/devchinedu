@@ -1,8 +1,8 @@
 .contactPage {
   display: none;
 
-  height: 70vh;
-  width: 35vw;
+  height: 35em;
+  width: 25em;
 
   position: absolute;
 
@@ -20,31 +20,28 @@
 
   animation: dropdown 0.5s 1;
   @include media-query(tablet) {
-    height: 60vh;
-    width: 40vw;
+    height: 35em;
+    width: 25em;
   }
   @include media-query(large-mobile) {
-    height: 60vh;
-    width: 50vw;
+    height: 35em;
+    width: 25em;
   }
 
   @include media-query(tablet-mini) {
-    height: 60vh;
-    width: 40vw;
+    height: 35em;
+    width: 25em;
   }
 
   @include media-query(desktop) {
-    height: 70vh;
-    width: 30vw;
+    height: 35em;
+    width: 25em;
   }
   @include media-query(desktopimac) {
     height: 80vh;
-  width: 25vw;
+    width: 25vw;
   }
 }
-
-
-
 
 .form-box {
   min-width: 100%;
@@ -82,11 +79,11 @@
     color: rgba(77, 77, 77, 0.1);
     position: absolute;
     right: -1em;
-    bottom:0em;
+    bottom: 0em;
     z-index: -1;
 
     @include media-query(tablet) {
-      bottom:0;
+      bottom: 0;
       right: -1.8em;
     }
     @include media-query(large-mobile) {
@@ -95,7 +92,7 @@
     }
 
     @include media-query(tablet-mini) {
-      bottom:0em;
+      bottom: 0em;
       right: -1.8em;
     }
     @include media-query(desktop) {
@@ -107,7 +104,7 @@
 
 .form-box h1 {
   color: white;
-margin-top: 2em;
+  margin-top: 1em;
   font-weight: 500;
   // @include media-query(tablet) {
   //   margin-top: 1em;
