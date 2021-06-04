@@ -27,8 +27,8 @@ p.label {
 .projectList {
   display: flex;
   flex-direction: row;
-  padding: 5em;
-  justify-content: flex-end;
+  width: 70em;
+  margin: auto;
 
   // @include media-query(large-mobile) {
   //   flex-wrap: wrap;
@@ -200,13 +200,13 @@ p.label {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 25em;
-  height: 30em;
+  width: 22em;
+  height: 28em;
   margin: 1em auto;
   margin-bottom: 10em;
   background-color: whitesmoke;
   padding: 1em;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   box-shadow: 0px 5px 18px 3px rgba(199, 219, 235, 0.2);
 
   @include media-query(desktop) {
@@ -270,12 +270,12 @@ p.label {
 }
 
 .p-image img {
-  width: 22em;
+  width: 21em;
   z-index: 999;
   margin-top: -10em;
   transition: 0.5s ease;
-  border-radius: 1.9em;
-  padding: 1.5em;
+  border-radius: 1em;
+  padding: 0.6em;
 
   @include media-query(desktop) {
     width: 30em;
@@ -360,11 +360,14 @@ p.label {
 
 .techIcon {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  width: 20em;
+  margin: auto;
 }
 .techIcon a {
-  font-size: 2em;
-  padding-right: 1.5em;
+  font-size: 1.5em;
+
   color: #153f69;
 
   @include media-query(desktop) {
@@ -397,7 +400,7 @@ p.label {
 button {
   background-color: #153f69;
   color: whitesmoke;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 
   &:hover {
     background-color: #017bff;
