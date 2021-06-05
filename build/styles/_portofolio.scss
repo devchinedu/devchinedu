@@ -26,29 +26,46 @@ p.label {
 
 .projectList {
   display: flex;
+  justify-content: center;
   flex-direction: row;
+
+  
   width: 70em;
   margin: auto;
+ 
 
-  // @include media-query(large-mobile) {
-  //   flex-wrap: wrap;
-  //   max-width: 70vw;
-  //   transform: translateX(25%);
-  // }
+  @include media-query(large-mobile) {
+    flex-wrap: wrap;
+    width: 70vw;
+  
+  }
 
-  // @include media-query(tablet-mini) {
-  //   flex-wrap: wrap;
-  //   max-width: 70vw;
-  // }
-  // @include media-query(desktop) {
-  //   flex-wrap: nowrap;
-  //   max-width: 70vw;
-  // }
+  @include media-query(tablet-mini) {
+    flex-wrap: wrap;
+   width: 70vw;
+ 
+  }
+ 
 }
+
+
 
 .projectList li {
   width: 25em;
   margin: 1em;
+  padding: 0.5em;
+
+  @include media-query(desktop) {
+    
+    width: 30em;
+    
+  }
+
+  @include media-query(desktopimac) {
+   
+    width: 30em;
+  }
+  
 }
 
 .projectList li .projectWrap {
@@ -180,6 +197,7 @@ p.label {
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
+
 }
 
 .p2 {
@@ -196,7 +214,7 @@ p.label {
   transform: translateX(20%);
 }
 
-.projectlist {
+.projectlist1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -268,6 +286,33 @@ p.label {
   margin: 0 1rem;
   transform: translate(0.1em, 0.7em);
 }
+
+.p2-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    padding-top: 1em;
+    margin-bottom: 2em;
+
+    color: #ccd6f6;
+  }
+}
+.p2-header h1::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #153f69;
+  width: 17rem;
+  margin: 0 1rem;
+  transform: translate(0.1em, 0.7em);
+}
+
+
+
+
 
 .p-image img {
   width: 21em;
@@ -349,19 +394,19 @@ p.label {
   text-align: justify;
   @include media-query(desktop) {
     font-size: 15px;
-    width: 15em;
+    width: 16.5em;
   }
 
   @include media-query(desktopimac) {
     font-size: 15px;
-    width: 15em;
+    width: 16.5em;
   }
 }
 
 .techIcon {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5em;
+  padding-top: 1.5em;
   width: 20em;
   margin: auto;
 }
@@ -417,14 +462,15 @@ button {
   font-size: 11px;
   margin-right: 0.3em;
   @include media-query(desktop) {
-    width: 7em;
-    margin: 1em 0.5em 1em;
+   padding: 0 3em;
+  margin-top: 1em;
     font-size: 1em;
   }
 
   @include media-query(desktopimac) {
-    width: 8.2em;
-    margin-right: 0.2em;
+    padding: 0 3em;
+    margin-top: 1em;
+      font-size: 1em;
   }
 }
 
@@ -436,14 +482,14 @@ button {
   font-size: 11px;
   margin-right: 0.2em;
   @include media-query(desktop) {
-    width: 2em;
-    margin: 1em 0em 1em;
+   padding: 0 0.5em;
+  margin-top: 1em;
     font-size: 1em;
   }
 
   @include media-query(desktopimac) {
-    width: 2em;
-    margin: 1em 0em 1em;
+    padding: 0 0.5em;
+  margin-top: 1em;
     font-size: 1em;
   }
 }

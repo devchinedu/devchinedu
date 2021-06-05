@@ -29,6 +29,12 @@ body {
   overflow-x: hidden;
 }
 
+hr {
+  color: #153f69;
+
+  border-color: #153f69;
+}
+
 .wrapper {
   display: flex;
   position: relative;
@@ -204,7 +210,7 @@ body {
 
 svg {
   position: absolute;
-  margin: 2px 3.5em auto;
+  margin: 2em 3.5em auto;
   top: 0;
   max-width: 3em;
   z-index: -1;
@@ -269,7 +275,7 @@ svg:hover {
 
 .wrapper .sidebar ul a li {
   display: flex;
-  padding: 15px;
+  padding: 10px;
   border-bottom: 1px solid #b8b9d7;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -278,6 +284,7 @@ svg:hover {
 .wrapper .sidebar ul a li {
   color: #bdb8d7;
   display: block;
+ 
 }
 
 .wrapper .sidebar ul a .fas {
@@ -467,12 +474,39 @@ svg:hover {
       margin-top: 5em;
     }
   }
+  .projectlist1{
+    width: 20em;
+  
+    
+  }
+  .p-image img{
+    width: 19em;
+    padding: 0.1em;
+  }
+
+  .p-desc .description{
+    width: 20em;
+  }
+
+  .p-header  h1 {
+    font-size: 20px;
+    
+  }
+  .p2-header  h1 {
+    font-size: 20px;
+    padding-bottom: 2em;
+  }
 
   .projectList {
     flex-wrap: wrap;
     width: 100vw;
     transform: translate(-15%);
     margin-top: -5em;
+    li{
+      width: 18em;
+      margin: 0 2.5em;
+     
+    }
   }
 
   .section {
@@ -488,7 +522,7 @@ svg:hover {
     }
     h2 {
       list-style: none;
-      font-size: 2em;
+      font-size: 1.2em;
       text-align: center;
       width: 80%;
     }
