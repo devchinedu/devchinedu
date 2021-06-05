@@ -9,6 +9,7 @@
 @import "./contact";
 @import "./scrollFade.scss";
 @import "./variables";
+@import "./preloader";
 
 html {
   scroll-behavior: smooth;
@@ -47,17 +48,21 @@ hr {
   width: 100vw;
 }
 
+
+
+
 .main_content {
   display: flex;
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  // background-image: url(../svg/Dlogo.svg);
+  background-image: url(../svg/NEWSHAPES.svg), url(../svg/NEWSHAPES22.svg), url(../svg/NEWSHAPES3.svg);
   //   background-image:url(../svg/d1.svg);
-  //   background-repeat: no-repeat;
-  // background-position: center;
-  // background-position: top left;
-  // background-position-x: 10%;
+    background-repeat: no-repeat;
+  background-position: center;
+
+ 
+
 
   animation: t-animation 6s;
 
