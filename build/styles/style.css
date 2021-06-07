@@ -2060,6 +2060,12 @@ hr {
           animation: t-animation 6s;
 }
 
+@media screen and (min-width: 1200px) {
+  .main_content {
+    background-size: 60%, 50%;
+  }
+}
+
 .main_content .header {
   display: -webkit-box;
   display: -ms-flexbox;
