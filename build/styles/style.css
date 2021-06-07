@@ -34,6 +34,7 @@ button::after, button::before {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #daf5ef;
+  cursor: pointer;
 }
 
 .shrink-border::before {
@@ -1060,14 +1061,14 @@ p.label {
   color: whitesmoke;
 }
 
-button {
+.buttons button {
   background-color: #153f69;
   color: whitesmoke;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-button:hover {
+.buttons button:hover {
   background-color: #017bff;
   border: none;
   color: #daf5ef;
@@ -2629,6 +2630,10 @@ svg:hover {
     margin: 0 2.5em;
     -webkit-transform: translateX(-5%);
             transform: translateX(-5%);
+  }
+  .buttons {
+    max-width: 7em;
+    float: right;
   }
   .section {
     max-width: 100vw;

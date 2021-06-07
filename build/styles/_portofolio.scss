@@ -29,26 +29,19 @@ p.label {
   justify-content: center;
   flex-direction: row;
 
-  
   width: 70em;
   margin: auto;
- 
 
   @include media-query(large-mobile) {
     flex-wrap: wrap;
     width: 70vw;
-  
   }
 
   @include media-query(tablet-mini) {
     flex-wrap: wrap;
-   width: 70vw;
- 
+    width: 70vw;
   }
- 
 }
-
-
 
 .projectList li {
   width: 25em;
@@ -56,16 +49,12 @@ p.label {
   padding: 0.5em;
 
   @include media-query(desktop) {
-    
     width: 30em;
-    
   }
 
   @include media-query(desktopimac) {
-   
     width: 30em;
   }
-  
 }
 
 .projectList li .projectWrap {
@@ -197,7 +186,6 @@ p.label {
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
-
 }
 
 .p2 {
@@ -287,7 +275,7 @@ p.label {
   margin: 0 1rem;
   transform: translate(0.1em, 0.7em);
   @include media-query(desktop) {
-    width: 17rem;;
+    width: 17rem;
   }
 
   @include media-query(desktopimac) {
@@ -317,17 +305,13 @@ p.label {
   margin: 0 1rem;
   transform: translate(0.1em, 0.7em);
   @include media-query(desktop) {
-    width: 17rem;;
+    width: 17rem;
   }
 
   @include media-query(desktopimac) {
     width: 17rem;
   }
 }
-
-
-
-
 
 .p-image img {
   width: 21em;
@@ -457,7 +441,7 @@ p.label {
   }
 }
 
-button {
+.buttons button {
   background-color: #153f69;
   color: whitesmoke;
   transition: all 0.2s ease;
@@ -477,15 +461,15 @@ button {
   font-size: 11px;
   margin-right: 0.3em;
   @include media-query(desktop) {
-   padding: 0 3em;
-  margin-top: 1em;
+    padding: 0 3em;
+    margin-top: 1em;
     font-size: 1em;
   }
 
   @include media-query(desktopimac) {
     padding: 0 3em;
     margin-top: 1em;
-      font-size: 1em;
+    font-size: 1em;
   }
 }
 
@@ -497,14 +481,14 @@ button {
   font-size: 11px;
   margin-right: 0.2em;
   @include media-query(desktop) {
-   padding: 0 0.5em;
-  margin-top: 1em;
+    padding: 0 0.5em;
+    margin-top: 1em;
     font-size: 1em;
   }
 
   @include media-query(desktopimac) {
     padding: 0 0.5em;
-  margin-top: 1em;
+    margin-top: 1em;
     font-size: 1em;
   }
 }
