@@ -1,6 +1,6 @@
 
 const contactus = document.querySelector('.contactus');
-const aboutMe = document.querySelector('.shrink-border');
+
 const contactpage = document.querySelector('.contactPage');
 const sendbtn = document.querySelector('#sendmessage');
 const sent = document.querySelector('#thankyou');
@@ -10,9 +10,7 @@ const closebtn = document.getElementsByClassName('close');
 contactus.addEventListener('click', function(){
     contactpage.classList.add('hidden');
 });
-aboutMe.addEventListener('click', function(){
-    contactpage.classList.add('hidden');
-});
+
 
 
 sendbtn.addEventListener('click', function(event){
