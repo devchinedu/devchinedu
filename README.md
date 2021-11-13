@@ -1,10 +1,8 @@
 ### Hi there, I'm David 👋
 
-[![Website](https://raw.githubusercontent.com/devchinedu/devchinedu/master/assets/img/rsz_danatex_logo_11.png)](https://danatex.co.uk)
 
-## I'm a Web Developer
+## I'm a Frontend Developer
 
-- 🔭 I run an IT Consultancy company - Danatex!
 - 🌱 I’m currently learning ways to make the web more accessible to everyone
 - 👯 I’m looking to collaborate with other developers or dev teams that want to make a change with code
 - 🥅 2021 Goals: Contribute more to Open Source projects and add more stacks under my belt (Python and Go)
