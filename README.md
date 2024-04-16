@@ -1,6 +1,6 @@
 ### Fontend
 
-Javascript, Typescript, Python, React, CSS, React Native,Bootstrap, Tailwind, Webpack.
+Javascript, Typescript, Python, React, CSS, React Native, Bootstrap, Tailwind, Webpack.
 
 ### Backend
 
