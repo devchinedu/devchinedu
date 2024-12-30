@@ -1,11 +1,11 @@
 ### Fontend
 
-Javascript, Typescript, Python, React, CSS, React Native, Bootstrap, Tailwind, Webpack.
+Javascript, Typescript, Python, React, CSS, React Native, Bootstrap, Tailwind.
 
 ### Backend
 
-NodeJS, SQL, MongoDB.
+NodeJS, ExpressJS.
 
 ### Other Skills
 
-AWS, Jest, Storybook, Stripe, Cypress, Jira.
+AWS(Lambda, EC2, S3),  MongoDB, MySQL, Jest, Storybook, Stripe, Cypress, Jira.
